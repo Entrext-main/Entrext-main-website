@@ -1,0 +1,29 @@
+{
+  "name": "react-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --port=3000 --hostname=0.0.0.0",
+    "build": "next build",
+    "start": "next start --port=3000 --hostname=0.0.0.0",
+    "lint": "next lint",
+    "compress-photos": "node scripts/compress-photos.mjs"
+  },
+  "dependencies": {
+    "@google/genai": "^1.29.0",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "next": "^16.2.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/node": "^22.14.0",
+    "@types/react": "19.2.14",
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "^4.1.14",
+    "typescript": "~5.8.2"
+  }
+}

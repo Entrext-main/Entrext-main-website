@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/*
+  next/font in app/layout.tsx sets --next-font-{sans,display,mono,doodle} on <html>.
+  Tailwind's @theme composes them with system fallbacks here, so utilities like
+  font-sans, font-display, font-mono, font-doodle resolve correctly.
+*/
+@theme {
+  --font-sans: var(--next-font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--next-font-display), serif;
+  --font-mono: var(--next-font-mono), ui-monospace, SFMono-Regular, monospace;
+  --font-premium: var(--next-font-display), serif;
+  --font-doodle: var(--next-font-doodle), cursive;
+
+  --color-brand-orange: #ff4d00;
+  --color-brand-orange-soft: rgba(255, 77, 0, 0.4);
+  --glow-orange: rgba(255, 77, 0, 0.2);
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white antialiased selection:bg-brand-orange selection:text-white;
+    font-family: var(--font-sans);
+    background: #000000;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-sans tracking-tight leading-[0.9];
+  }
+}
+
+@layer components {
+  .sleek-card {
+    @apply border border-white/5 bg-white/[0.02] backdrop-blur-2xl p-8 transition-all duration-700 hover:border-brand-orange/30 hover:bg-white/[0.05];
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-white via-white to-zinc-500;
+  }
+
+  .orange-gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-[#ff4d00] to-[#ff4d00];
+  }
+
+  .light-ray {
+    @apply absolute w-[1px] h-full bg-gradient-to-b from-transparent via-brand-orange/80 to-transparent;
+    box-shadow: 0 0 20px #ff4d00;
+  }
+
+  .orange-glow {
+    @apply absolute rounded-full bg-brand-orange/20 blur-[120px] pointer-events-none;
+  }
+
+  .nav-link {
+    @apply text-[10px] uppercase tracking-[0.3em] text-zinc-500 font-extrabold hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-brand-orange focus-visible:ring-offset-2 focus-visible:ring-offset-black focus-visible:rounded-sm transition-all duration-300;
+  }
+
+  .brutalist-border {
+    @apply border border-white/10;
+  }
+}
+
+/* Respect users who request less motion: kill the marquee/loop animations and trim transition durations. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom velocity scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-orange);
+}
