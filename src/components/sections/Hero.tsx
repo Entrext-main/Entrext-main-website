@@ -12,21 +12,25 @@ export const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-[8px] md:text-[10px] font-mono text-[#ff4d00] mb-6 md:mb-8 uppercase tracking-[0.4em] md:tracking-[0.6em] font-black flex items-center justify-center gap-2 md:gap-4 px-4"
+          className="text-[8px] md:text-[10px] font-mono text-[#ff4d00] mb-8 md:mb-10 uppercase tracking-[0.4em] md:tracking-[0.6em] font-black flex items-center justify-center gap-2 md:gap-4 px-4"
         >
           <span className="hidden sm:block w-2 md:w-4 h-[1px] bg-[#ff4d00]" />
-          <span className="text-center">Building the World's First Technology-Owned Founder Ecosystem</span>
+          <span className="text-center">Manifesto_v4 // Build. Own. Compound.</span>
           <span className="hidden sm:block w-2 md:w-4 h-[1px] bg-[#ff4d00]" />
         </motion.div>
 
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="text-5xl sm:text-6xl md:text-8xl lg:text-[140px] font-sans font-black leading-[0.9] tracking-tight uppercase mb-16 md:mb-20"
+          className="mx-auto max-w-[22ch] text-balance text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[96px] font-sans font-black leading-[0.95] tracking-[-0.02em] uppercase mb-14 md:mb-20"
         >
-          Build. Own. <br/>
-          <span className="orange-gradient-text italic">Compound.</span>
+          Building the World's{" "}
+          <span className="font-display italic font-normal normal-case tracking-[-0.01em] text-white">First</span>{" "}
+          Technology-Owned{" "}
+          <span className="orange-gradient-text font-display italic font-normal normal-case tracking-[-0.01em]">
+            Founder Ecosystem
+          </span>
         </motion.h1>
       </div>
 
@@ -41,8 +45,11 @@ export const Hero = () => {
             <h2 className="text-xl md:text-3xl font-bold text-white mb-6 uppercase tracking-tight leading-tight">
               The Equity-First Venture Studio Where Founders Build, Own, and Scale Together.
             </h2>
-            <p className="text-sm md:text-lg leading-relaxed uppercase tracking-tight font-bold opacity-80 mb-10 md:mb-12">
+            <p className="text-sm md:text-lg leading-relaxed uppercase tracking-tight font-bold opacity-80 mb-6 md:mb-8">
               We pair tech builders and growth operators to launch, validate, and scale niche digital products. This is not a place to get hired. It is a place to build, own, and compound products over time.
+            </p>
+            <p className="font-display italic text-xl md:text-2xl text-white leading-snug tracking-tight border-l-2 border-[#ff4d00] pl-4 md:pl-5 mb-10 md:mb-12">
+              Not a job — you co-build and build startups here.
             </p>
           </motion.div>
 
@@ -55,8 +62,8 @@ export const Hero = () => {
             <Link href="/apply" className="w-full sm:w-auto bg-[#ff4d00] text-white px-8 md:px-12 py-4 md:py-5 rounded-md font-black text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] shadow-[0_20px_50px_rgba(255,77,0,0.2)] hover:shadow-[0_25px_60px_rgba(255,77,0,0.3)] transition-all hover:-translate-y-1 text-center">
               Apply as Founding Partner
             </Link>
-            <Link href="/ecosystem" className="w-full sm:w-auto border border-white/10 hover:border-white/30 backdrop-blur-md px-8 md:px-12 py-4 md:py-5 rounded-md font-black text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] transition-all text-center">
-              Explore Ecosystem
+            <Link href="/advertise" className="w-full sm:w-auto border border-white/10 hover:border-white/30 backdrop-blur-md px-8 md:px-12 py-4 md:py-5 rounded-md font-black text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] transition-all text-center">
+              Advertise With Us
             </Link>
           </motion.div>
         </div>

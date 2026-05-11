@@ -39,13 +39,15 @@ export const metadata: Metadata = {
     template: "%s · Entrext",
   },
   description:
-    "Entrext is a bootstrapped venture studio that pairs technical builders with growth operators to launch, validate, and scale niche digital products end-to-end.",
+    "Building the world's first technology-owned founder ecosystem. Entrext is a bootstrapped venture studio where founders co-build and launch startups — not jobs — pairing technical builders with growth operators to validate and scale niche digital products end-to-end.",
   applicationName: "Entrext",
   authors: [{ name: "Entrext" }],
   generator: "Next.js",
   keywords: [
+    "technology-owned founder ecosystem",
     "venture studio",
     "founder ecosystem",
+    "co-build startups",
     "bootstrapped startup",
     "technical co-founder",
     "growth operator",
@@ -53,22 +55,23 @@ export const metadata: Metadata = {
     "Entrext Pro",
     "Entrext Labs",
     "Edge Foundation",
+    "advertise with Entrext",
   ],
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "Entrext",
     url: SITE_URL,
-    title: "Entrext — World's First Technology-Owned Founder Ecosystem",
+    title: "Entrext — Building the World's First Technology-Owned Founder Ecosystem",
     description:
-      "A bootstrapped venture studio pairing builders and growth operators to launch, validate, and scale digital products.",
+      "Not a job — you co-build and build startups here. Entrext pairs builders and growth operators to launch, validate, and scale digital products.",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Entrext — World's First Technology-Owned Founder Ecosystem",
+    title: "Entrext — Building the World's First Technology-Owned Founder Ecosystem",
     description:
-      "A bootstrapped venture studio pairing builders and growth operators to launch, validate, and scale digital products.",
+      "Not a job — you co-build and build startups here. Entrext pairs builders and growth operators to launch, validate, and scale digital products.",
     creator: "@entrext",
   },
   // Favicon is auto-generated from app/icon.tsx — no static asset declaration needed.

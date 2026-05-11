@@ -68,14 +68,14 @@ export const MEMBERS: Member[] = [
   { name: "Disha",    division: "TECH",   image: "/members/tech/disha.webp" },
   { name: "Youssef",  division: "GROWTH", image: "/members/growth/youssef.webp" },
   { name: "Anurag",   division: "TECH",   image: "/members/tech/anurag.webp" },
-  { name: "Janet",    division: "GROWTH", image: null },
+  { name: "Janet",    division: "GROWTH", image: "/members/growth/janet.webp" },
   { name: "Ashish",   division: "TECH",   image: "/members/tech/ashish.webp" },
   { name: "Mohit",    division: "TECH",   image: "/members/tech/mohit.webp" },
   { name: "Surya",    division: "TECH",   image: "/members/tech/surya.webp" },
   { name: "Tirth",    division: "TECH",   image: "/members/tech/tirth.webp" },
   { name: "Akash",    division: "TECH",   image: null },
-  { name: "Aryan",    division: "TECH",   image: null },
-  { name: "Komal",    division: "TECH",   image: null },
+  { name: "Aryan",    division: "TECH",   image: "/members/tech/aryan.webp" },
+  { name: "Komal",    division: "TECH",   image: "/members/tech/komal.webp" },
 ];
 
 export const TECHS = [
@@ -162,7 +162,7 @@ export const PRODUCTS = [
   {
     id: "01",
     name: "Monkfeed",
-    category: "Customer SaaS Tool",
+    category: "Customer Feedback SaaS",
     builders: "Hitender, Ikshit",
     status: "Released April 2026",
     journey: [
@@ -170,7 +170,7 @@ export const PRODUCTS = [
       "Hitender joined at inflection",
       "Rebranded to Monkfeed // Velocity shift"
     ],
-    signal: "From chaos to clarity. Ownership compression created speed.",
+    signal: "Customer feedback widget for SaaS and mobile apps. Turn feedback into product decisions faster.",
     color: "text-blue-400",
     glow: "shadow-blue-500/20",
     preview: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
@@ -178,7 +178,7 @@ export const PRODUCTS = [
   {
     id: "02",
     name: "Herth",
-    category: "Hyper-Commerce",
+    category: "Hyper-Local Commerce",
     builders: "Garv, Kritika",
     status: "Released Jan 2026",
     journey: [
@@ -186,7 +186,7 @@ export const PRODUCTS = [
       "Evolved into ecosystem layer",
       "Focus: organic women-led commerce"
     ],
-    signal: "From niche intent to ecosystem play. Community to culture.",
+    signal: "A platform where women entrepreneurs become easier to discover, trust, and choose — from their own city to the rest of India. Focus: hyper-local businesses.",
     color: "text-pink-400",
     glow: "shadow-pink-500/20",
     preview: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop"
@@ -202,15 +202,15 @@ export const PRODUCTS = [
       "Deep validation cycles implemented",
       "Pivoted into travel community"
     ],
-    signal: "From abstraction to real user problem. Validation wins.",
+    signal: "In a world full of travelers, why not have a planet built for travelers?",
     color: "text-purple-400",
     glow: "shadow-purple-500/20",
     preview: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=2070&auto=format&fit=crop"
   },
   {
     id: "04",
-    name: "NOA",
-    category: "AI Infrastructure",
+    name: "Noa",
+    category: "AI Prompt Discovery",
     builders: "Taha",
     status: "Released July 2025",
     journey: [
@@ -218,7 +218,7 @@ export const PRODUCTS = [
       "Building system-wide protocols",
       "Infra thinking over execution"
     ],
-    signal: "From tool to paradigm shift. Infrastructure over surface.",
+    signal: "A new way to discover prompts, compare analyses, and figure out the best results.",
     color: "text-cyan-400",
     glow: "shadow-cyan-500/20",
     preview: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop"
@@ -234,15 +234,15 @@ export const PRODUCTS = [
       "Shifted toward interaction frameworks",
       "Rebuilt around intent-driven sync"
     ],
-    signal: "From clone to conviction. Depth over dopamine hit.",
+    signal: "A new way to find people who truly listen to you.",
     color: "text-[#ff4d00]",
     glow: "shadow-[#ff4d00]/20",
     preview: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=2098&auto=format&fit=crop"
   },
   {
     id: "06",
-    name: "KnowX",
-    category: "Matchmaking",
+    name: "Knowx",
+    category: "Co-founder Matchmaking",
     builders: "Manthan + Team",
     status: "Released Jan 2024",
     journey: [
@@ -250,7 +250,7 @@ export const PRODUCTS = [
       "Direction maintained through instability",
       "Resilient execution model found"
     ],
-    signal: "From dependency to resilience. All products teach.",
+    signal: "Tinder for co-founders.",
     color: "text-zinc-400",
     glow: "shadow-zinc-500/20",
     preview: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"

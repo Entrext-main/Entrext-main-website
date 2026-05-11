@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/labs', priority: 0.8 },
     { url: '/blog', priority: 0.8 },
     { url: '/apply', priority: 0.8 },
-    { url: '/ecosystem', priority: 0.8 },
+    { url: '/advertise', priority: 0.8 },
     { url: '/products', priority: 0.8 },
     { url: '/edge', priority: 0.8 },
   ]

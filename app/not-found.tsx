@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const items: SitelinkItem[] = [
   { label: "Homepage", description: "Back to the studio overview.", href: "/" },
-  { label: "Ecosystem", description: "Pro, Labs, and Edge — the three divisions.", href: "/ecosystem" },
+  { label: "Advertise With Us", description: "Sponsorships and partnerships across the Entrext network.", href: "/advertise" },
   { label: "Products", description: "Six shipped products and the journey behind each one.", href: "/products" },
   { label: "Apply", description: "Primary, Secondary, and Volunteer Mentor partner tracks.", href: "/apply" },
   { label: "FAQ", description: "Equity, money, selection, ops — the full dossier.", href: "/#faq" },
