@@ -19,10 +19,10 @@ export const FoundingMembers = () => {
         <div className="text-center md:text-left">
            <span className="font-mono text-[9px] md:text-[10px] text-[#ff4d00]/60 uppercase tracking-[0.5em] mb-4 block font-black">Collective_Personnel // 03</span>
            <h2 className="text-5xl md:text-7xl lg:text-[100px] font-display italic tracking-tighter text-white leading-none mb-8 md:mb-12">
-             Strategic <span className="text-white/20">Lattice.</span>{" "}
-             <span className="text-white/40 text-3xl md:text-5xl lg:text-6xl align-middle not-italic font-sans font-black tracking-tight uppercase">
+             Strategic <span className="text-white/20">People.</span>{" "}
+             {/* <span className="text-white/40 text-3xl md:text-5xl lg:text-6xl align-middle not-italic font-sans font-black tracking-tight uppercase">
                (People)
-             </span>
+             </span> */}
            </h2>
            <p className="max-w-2xl text-base md:text-lg font-medium text-white/40 leading-relaxed italic uppercase tracking-tight">
              Entrext is built on high-trust relationships. Each node in this lattice represents a specialized operator scaling the ecosystem.

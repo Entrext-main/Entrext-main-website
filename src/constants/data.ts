@@ -186,7 +186,7 @@ export const PRODUCTS = [
       "Evolved into ecosystem layer",
       "Focus: organic women-led commerce"
     ],
-    signal: "A platform where women entrepreneurs become easier to discover, trust, and choose — from their own city to the rest of India. Focus: hyper-local businesses.",
+    signal: "A platform where women entrepreneurs become easier to discover, trust, and choose.",
     color: "text-pink-400",
     glow: "shadow-pink-500/20",
     preview: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop"
