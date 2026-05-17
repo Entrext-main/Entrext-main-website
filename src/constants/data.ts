@@ -60,22 +60,17 @@ export const MEMBERS: Member[] = [
   { name: "Ikshit",   division: "TECH",   image: "/members/tech/ikshit.webp" },
   { name: "Hitender", division: "GROWTH", image: "/members/growth/hitender.webp" },
   { name: "Taha",     division: "TECH",   image: "/members/tech/taha.webp" },
-  { name: "Aisha",    division: "GROWTH", image: "/members/growth/aisha.webp" },
   { name: "Manthan",  division: "TECH",   image: "/members/tech/manthan.webp" },
   { name: "Kritika",  division: "GROWTH", image: "/members/growth/kritika.webp" },
   { name: "Garv",     division: "TECH",   image: "/members/tech/garv.webp" },
   { name: "Ranim",    division: "GROWTH", image: "/members/growth/ranim.webp" },
   { name: "Disha",    division: "TECH",   image: "/members/tech/disha.webp" },
-  { name: "Youssef",  division: "GROWTH", image: "/members/growth/youssef.webp" },
-  { name: "Anurag",   division: "TECH",   image: "/members/tech/anurag.webp" },
   { name: "Janet",    division: "GROWTH", image: "/members/growth/janet.webp" },
   { name: "Ashish",   division: "TECH",   image: "/members/tech/ashish.webp" },
   { name: "Mohit",    division: "TECH",   image: "/members/tech/mohit.webp" },
   { name: "Surya",    division: "TECH",   image: "/members/tech/surya.webp" },
-  { name: "Tirth",    division: "TECH",   image: "/members/tech/tirth.webp" },
-  { name: "Akash",    division: "TECH",   image: null },
   { name: "Aryan",    division: "TECH",   image: "/members/tech/aryan.webp" },
-  { name: "Komal",    division: "TECH",   image: "/members/tech/komal.webp" },
+  { name: "Saumya",   division: "TECH",   image: "/members/tech/saumya.webp" },
 ];
 
 export const TECHS = [
