@@ -15,7 +15,7 @@ export const Hero = () => {
           className="text-[8px] md:text-[10px] font-mono text-[#ff4d00] mb-8 md:mb-10 uppercase tracking-[0.4em] md:tracking-[0.6em] font-black flex items-center justify-center gap-2 md:gap-4 px-4"
         >
           <span className="hidden sm:block w-2 md:w-4 h-[1px] bg-[#ff4d00]" />
-          <span className="text-center">Manifesto_v4 // Build. Own. Compound.</span>
+          <span className="text-center">Build. Own. Compound.</span>
           <span className="hidden sm:block w-2 md:w-4 h-[1px] bg-[#ff4d00]" />
         </motion.div>
 
@@ -63,7 +63,7 @@ export const Hero = () => {
               Apply as Founding Partner
             </Link>
             <Link href="/advertise" className="w-full sm:w-auto border border-white/10 hover:border-white/30 backdrop-blur-md px-8 md:px-12 py-4 md:py-5 rounded-md font-black text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] transition-all text-center">
-              Advertise With Us
+              Advertise
             </Link>
           </motion.div>
         </div>

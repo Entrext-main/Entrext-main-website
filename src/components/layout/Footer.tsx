@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const Footer = () => (
@@ -11,10 +12,14 @@ export const Footer = () => (
     <div className="max-w-7xl mx-auto px-6 md:px-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
         <div className="col-span-1 md:col-span-2">
-          <Link href="/" className="inline-flex items-center gap-2 mb-8 group">
-            <div className="w-8 h-8 bg-white flex items-center justify-center transition-colors group-hover:bg-brand-orange">
-              <span className="text-black font-bold text-xl">X</span>
-            </div>
+          <Link href="/" className="inline-flex items-center gap-3 mb-8 group" aria-label="Entrext home">
+            <Image
+              src="/logos/entrext.webp"
+              alt=""
+              width={36}
+              height={36}
+              className="w-9 h-9 object-contain group-hover:scale-110 transition-transform"
+            />
             <span className="font-sans font-bold text-xl tracking-tighter uppercase text-white">Entrext</span>
           </Link>
           <p className="text-neutral-500 max-w-xs text-sm leading-relaxed mb-8">
@@ -44,7 +49,7 @@ export const Footer = () => (
           <h5 className="font-mono text-xs uppercase font-bold mb-8 text-neutral-500">Contact //</h5>
           <ul className="space-y-4 text-sm">
             <li><Link href="/apply#primary" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Apply as Partner</Link></li>
-            <li><Link href="/advertise" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Advertise With Us</Link></li>
+            <li><Link href="/advertise" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Advertise</Link></li>
             <li><Link href="/#faq" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">FAQ</Link></li>
             <li><Link href="/blog" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Blog</Link></li>
           </ul>

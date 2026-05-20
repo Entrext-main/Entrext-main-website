@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Navbar } from "@/src/components/layout/Navbar";
 import { Footer } from "@/src/components/layout/Footer";
 import { GlowBackground } from "@/src/components/layout/GlowBackground";
@@ -41,6 +42,14 @@ export default function LabsPage() {
       <GlowBackground />
       <Navbar />
       <main id="main" className="max-w-[1100px] mx-auto px-6 md:px-12 pb-32">
+        <Image
+          src="/logos/labs.webp"
+          alt=""
+          width={96}
+          height={96}
+          priority
+          className="w-20 h-20 md:w-24 md:h-24 object-contain mb-8"
+        />
         <h1 className="text-6xl md:text-8xl font-sans font-black uppercase text-white mb-8 leading-[0.9]">
           Entrext-Labs
         </h1>

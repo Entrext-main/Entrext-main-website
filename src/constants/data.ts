@@ -37,7 +37,7 @@ export const DIVISIONS = [
   {
     id: "EDGE",
     title: "Edge",
-    tagline: "Performance Frameworks",
+    tagline: "Hyper-Casual Gaming Marketplace",
     desc: "Games that make you better. Hyper-creative, skill-elevating experiences designed for focus, growth, and execution.",
     subDesc: "Moving from surface execution to infra thinking through interactive paradigm shifts.",
     status: "IP_LIVE",
@@ -161,9 +161,9 @@ export const PRODUCTS = [
     builders: "Hitender, Ikshit",
     status: "Released April 2026",
     journey: [
-      "Consolidated ownership to Ikshit",
-      "Hitender joined at inflection",
-      "Rebranded to Monkfeed // Velocity shift"
+      "Ownership consolidated under Ikshit",
+      "Hitender joined during a key growth phase",
+      "Rebranded to Monkfeed, shifting toward faster execution"
     ],
     signal: "Customer feedback widget for SaaS and mobile apps. Turn feedback into product decisions faster.",
     color: "text-blue-400",
@@ -177,9 +177,9 @@ export const PRODUCTS = [
     builders: "Garv, Kritika",
     status: "Released Jan 2026",
     journey: [
-      "Intent around founder support",
-      "Evolved into ecosystem layer",
-      "Focus: organic women-led commerce"
+      "Started with supporting founders",
+      "Evolved into an ecosystem-focused layer",
+      "Focused on organic women-led commerce"
     ],
     signal: "A platform where women entrepreneurs become easier to discover, trust, and choose.",
     color: "text-pink-400",
@@ -193,9 +193,9 @@ export const PRODUCTS = [
     builders: "Ikshit, Ranim",
     status: "Released March 2026",
     journey: [
-      "Started as AI product cluster",
-      "Deep validation cycles implemented",
-      "Pivoted into travel community"
+      "Began as an AI product cluster",
+      "Introduced deeper validation cycles",
+      "Pivoted into a travel community"
     ],
     signal: "In a world full of travelers, why not have a planet built for travelers?",
     color: "text-purple-400",
@@ -209,9 +209,9 @@ export const PRODUCTS = [
     builders: "Taha",
     status: "Released July 2025",
     journey: [
-      "Rethinking the interaction layer",
-      "Building system-wide protocols",
-      "Infra thinking over execution"
+      "Rethinking how people interact with systems",
+      "Building shared protocols across the ecosystem",
+      "Moving from execution to infrastructure thinking"
     ],
     signal: "A new way to discover prompts, compare analyses, and figure out the best results.",
     color: "text-cyan-400",
@@ -225,9 +225,9 @@ export const PRODUCTS = [
     builders: "Foundry Core",
     status: "Released Feb 2026",
     journey: [
-      "Abandoned commoditized use cases",
-      "Shifted toward interaction frameworks",
-      "Rebuilt around intent-driven sync"
+      "Moved away from commoditized use cases",
+      "Shifted toward interaction-based frameworks",
+      "Rebuilt around intent-driven coordination"
     ],
     signal: "A new way to find people who truly listen to you.",
     color: "text-[#ff4d00]",
@@ -241,9 +241,9 @@ export const PRODUCTS = [
     builders: "Manthan + Team",
     status: "Released Jan 2024",
     journey: [
-      "Survived founding partner churn",
-      "Direction maintained through instability",
-      "Resilient execution model found"
+      "Survived founding partner changes",
+      "Maintained direction through instability",
+      "Built a more resilient execution model"
     ],
     signal: "Tinder for co-founders.",
     color: "text-zinc-400",

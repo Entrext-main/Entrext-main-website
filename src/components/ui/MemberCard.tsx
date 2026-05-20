@@ -73,7 +73,7 @@ export const MemberCard: React.FC<MemberCardProps> = ({ name, division, image, i
     </div>
 
     <div className="mt-6 flex justify-center opacity-0 group-hover:opacity-20 transition-opacity">
-      <div className="text-[8px] font-mono text-white uppercase tracking-widest">Personnel_Node // v4.0.{index + 1}</div>
+      <div className="text-[8px] font-mono text-white uppercase tracking-widest">Personnel_Node // {String(index + 1).padStart(2, "0")}</div>
     </div>
   </motion.div>
 );

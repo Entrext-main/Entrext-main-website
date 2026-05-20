@@ -58,7 +58,7 @@ export const InHouseTechnologies = () => {
             <div className="flex items-center gap-4 mb-6 md:mb-8">
               <div className="w-12 h-[1px] bg-brand-orange" />
               <span className="font-mono text-[9px] md:text-[10px] text-black/40 uppercase tracking-[0.3em] md:tracking-[0.5em] font-black">
-                Proprietary_Core // Stack_v4
+                Proprietary Core
               </span>
             </div>
 

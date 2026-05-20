@@ -74,7 +74,13 @@ export const metadata: Metadata = {
       "Not a job — you co-build and build startups here. Entrext pairs builders and growth operators to launch, validate, and scale digital products.",
     creator: "@entrext",
   },
-  // Favicon is auto-generated from app/icon.tsx — no static asset declaration needed.
+  icons: {
+    icon: [
+      { url: "/logos/entrext.webp", type: "image/webp", sizes: "256x256" },
+    ],
+    shortcut: "/logos/entrext.webp",
+    apple: "/logos/entrext.webp",
+  },
   robots: {
     index: true,
     follow: true,
@@ -108,7 +114,7 @@ export default function RootLayout({
         name: "Entrext",
         alternateName: "Entrepreneur's Next",
         url: SITE_URL,
-        logo: `${SITE_URL}/icon.png`,
+        logo: `${SITE_URL}/logos/entrext.webp`,
         description:
           "A bootstrapped venture studio that pairs technical builders with growth operators to launch, validate, and scale niche digital products.",
         slogan: "Build. Own. Compound.",

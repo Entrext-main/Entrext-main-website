@@ -10,7 +10,7 @@ export const PrinciplesSection = () => {
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
         <div className="flex flex-col lg:flex-row justify-between items-end mb-20 md:mb-32 gap-12 md:gap-16">
           <div className="max-w-2xl text-center md:text-left">
-            <span className="font-mono text-[9px] md:text-[10px] text-[#ff4d00] uppercase tracking-[0.4em] md:tracking-[0.6em] mb-4 md:mb-6 block font-black">Architecture of Execution // v4.0</span>
+            <span className="font-mono text-[9px] md:text-[10px] text-[#ff4d00] uppercase tracking-[0.4em] md:tracking-[0.6em] mb-4 md:mb-6 block font-black">Architecture of Execution</span>
             <h2 className="text-5xl md:text-7xl lg:text-9xl font-sans font-black uppercase tracking-tighter text-black leading-[0.8] mb-8 md:mb-12">
               Founding <br/><span className="opacity-10">Principles.</span>
             </h2>

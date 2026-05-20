@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   openGraph: { url: "/apply", title: "Apply · Entrext" },
 };
 
+// Tally form URLs. Labs has its own Primary/Secondary forms; Pro shares the same
+// applications today — split if/when a Pro-specific form ships.
 const partners = [
   {
     id: "primary",
@@ -25,6 +27,7 @@ const partners = [
       "You set direction; Entrext provides infra, tools, and growth distribution",
       "Highest reward, highest accountability",
     ],
+    applyHref: "https://tally.so/r/449675",
   },
   {
     id: "secondary",
@@ -39,6 +42,7 @@ const partners = [
       "Lower starting risk, real ownership",
       "Best for builders who want momentum from day one",
     ],
+    applyHref: "https://tally.so/r/LZarMj",
   },
   {
     id: "volunteer",
@@ -53,6 +57,7 @@ const partners = [
       "Mentor 1–3 active products per cycle",
       "For senior operators who want signal without a full-time bet",
     ],
+    applyHref: "https://tally.so/r/5Be7q6",
   },
 ];
 
@@ -108,7 +113,9 @@ export default function ApplyPage() {
                 ))}
               </ul>
               <a
-                href={`mailto:hello@entrext.com?subject=Application: ${encodeURIComponent(p.label)}`}
+                href={p.applyHref}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-4 bg-[#ff4d00] text-white px-10 py-5 rounded-md font-black text-[10px] uppercase tracking-[0.4em] hover:-translate-y-1 transition-transform shadow-[0_20px_50px_rgba(255,77,0,0.2)]"
               >
                 Apply for {p.label}
@@ -119,9 +126,9 @@ export default function ApplyPage() {
         </div>
 
         <p className="mt-32 max-w-2xl text-sm text-zinc-500 italic border-t border-white/5 pt-12">
-          A proper application form is in the works. Until it ships, the email above reaches the
-          partnership desk directly — write a paragraph about who you are, what you&apos;ve shipped, and
-          which track you&apos;re applying for.
+          Each track has its own form. Pick the one that matches the bet you&apos;re making, and write
+          plainly about who you are, what you&apos;ve shipped, and why you&apos;re applying. Plan-B
+          applications stand out — not in the way you&apos;d hope.
         </p>
       </main>
       <Footer />

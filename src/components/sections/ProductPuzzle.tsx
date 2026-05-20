@@ -15,7 +15,7 @@ export const ProductPuzzle = () => {
           <div className="max-w-2xl text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-4 mb-6">
                <div className="w-12 h-[1px] bg-[#ff4d00]" />
-               <span className="font-mono text-[9px] md:text-[10px] text-white/40 uppercase tracking-[0.5em] font-black">Archive_System // v4.0</span>
+               <span className="font-mono text-[9px] md:text-[10px] text-white/40 uppercase tracking-[0.5em] font-black">Archive_System</span>
             </div>
             <h2 className="text-5xl md:text-7xl lg:text-9xl font-sans font-black uppercase tracking-tighter text-white leading-[0.9] mb-8 md:mb-12">
                Strategic <br/> <span className="text-white/20">Performers.</span>

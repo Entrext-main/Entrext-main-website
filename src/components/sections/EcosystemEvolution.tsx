@@ -23,7 +23,7 @@ export const EcosystemEvolution = () => {
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-8">
            <div className="max-w-xl">
-              <span className="font-mono text-[9px] md:text-[10px] text-[#ff4d00] uppercase tracking-[0.4em] md:tracking-[0.6em] mb-4 md:mb-6 block font-black">Our Ecosystem // v4.0</span>
+              <span className="font-mono text-[9px] md:text-[10px] text-[#ff4d00] uppercase tracking-[0.4em] md:tracking-[0.6em] mb-4 md:mb-6 block font-black">Our Ecosystem</span>
               <h2 className="text-5xl md:text-8xl font-sans font-black uppercase tracking-tighter text-white leading-none mb-6 md:mb-8">
                 Living <span className="text-white/20">Growth.</span>
               </h2>
@@ -95,7 +95,7 @@ export const EcosystemEvolution = () => {
               <div className="flex gap-2">
                  {[1,2,3].map(j => <div key={j} className="w-1 h-1 rounded-full bg-[#ff4d00] opacity-40" />)}
               </div>
-              <p className="text-[8px] md:text-[9px] font-mono font-black text-white/30 uppercase tracking-[0.2em] md:tracking-[0.4em] text-center">Compounding_Network_Effect // v4.0</p>
+              <p className="text-[8px] md:text-[9px] font-mono font-black text-white/30 uppercase tracking-[0.2em] md:tracking-[0.4em] text-center">Compounding Network Effect</p>
               <div className="hidden sm:flex gap-2 text-white/20">
                  <ArrowRight size={12} />
               </div>

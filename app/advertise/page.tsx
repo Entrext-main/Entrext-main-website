@@ -5,13 +5,13 @@ import { GlowBackground } from "@/src/components/layout/GlowBackground";
 import { SitelinksList, SitelinkItem } from "@/src/components/ui/SitelinksList";
 
 export const metadata: Metadata = {
-  title: "Advertise With Us",
+  title: "Advertise",
   description:
     "Reach Entrext's network of founders, builders, and growth operators across Labs, Pro, and Edge. Sponsorships, product placements, and ecosystem partnerships.",
   alternates: { canonical: "/advertise" },
   openGraph: {
     url: "/advertise",
-    title: "Advertise With Us · Entrext",
+    title: "Advertise · Entrext",
     description:
       "Reach Entrext's network of founders, builders, and growth operators. Sponsorships, product placements, and ecosystem partnerships.",
   },
@@ -19,16 +19,16 @@ export const metadata: Metadata = {
 
 const items: SitelinkItem[] = [
   {
-    label: "Ecosystem Sponsorship",
+    label: "Advertise With Us",
     description:
-      "Get in front of the operators building inside Entrext Labs, Pro, and Edge.",
-    href: "mailto:partners@entrext.com?subject=Ecosystem%20Sponsorship",
+      "Sponsor placements across Entrext Labs, Pro, and Edge. Reach a focused, builder-first audience.",
+    href: "https://tally.so/r/ob5P0V",
   },
   {
-    label: "Product Placement",
+    label: "Partnerships",
     description:
-      "Embed inside live Entrext products with high-intent, builder-first audiences.",
-    href: "mailto:partners@entrext.com?subject=Product%20Placement",
+      "Strategic, distribution, or product partnerships with the studio and its portfolio.",
+    href: "https://tally.so/r/rjJ40v",
   },
   {
     label: "Apply as Founding Partner",
@@ -45,13 +45,13 @@ export default function AdvertisePage() {
       <Navbar />
       <main id="main" className="max-w-[1100px] mx-auto px-6 md:px-12 pb-32">
         <h1 className="text-6xl md:text-8xl font-sans font-black uppercase text-white mb-8 leading-[0.9]">
-          Advertise <span className="orange-gradient-text font-display italic font-normal normal-case">With Us</span>
+          <span className="orange-gradient-text font-display italic font-normal normal-case">Advertise.</span>
         </h1>
         <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-16 md:mb-24 leading-relaxed">
           Reach a focused network of founders, builders, and growth operators inside the world's first technology-owned founder ecosystem. Pick the channel that fits.
         </p>
 
-        <SitelinksList items={items} eyebrow="Partner_Channel // 01" />
+        <SitelinksList items={items} eyebrow="Partner Channel" />
       </main>
       <Footer />
     </div>

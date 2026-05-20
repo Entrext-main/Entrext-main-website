@@ -25,7 +25,7 @@ export const FoundingMembers = () => {
              </span> */}
            </h2>
            <p className="max-w-2xl text-base md:text-lg font-medium text-white/40 leading-relaxed italic uppercase tracking-tight">
-             Entrext is built on high-trust relationships. Each node in this lattice represents a specialized operator scaling the ecosystem.
+             Entrext is built on high-trust relationships. Each role in this network represents a specialized operator helping scale the ecosystem.
            </p>
         </div>
       </div>
