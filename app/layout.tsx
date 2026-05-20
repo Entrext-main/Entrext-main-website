@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Urbanist, Instrument_Serif, JetBrains_Mono, Gochi_Hand } from "next/font/google";
+import { Loader } from "@/src/components/ui/Loader";
 import "./globals.css";
 
 const SITE_URL = "https://www.entrext.com";
@@ -153,6 +154,7 @@ export default function RootLayout({
         >
           Skip to content
         </a>
+        <Loader />
         {children}
       </body>
     </html>
