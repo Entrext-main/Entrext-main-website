@@ -11,10 +11,9 @@ interface MemberCardProps {
   name: string;
   division: Division;
   image: string | null;
-  index: number;
 }
 
-export const MemberCard: React.FC<MemberCardProps> = ({ name, division, image, index }) => (
+export const MemberCard: React.FC<MemberCardProps> = ({ name, division, image }) => (
   <motion.div
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -53,9 +52,6 @@ export const MemberCard: React.FC<MemberCardProps> = ({ name, division, image, i
           >
             {name.charAt(0)}
           </span>
-          <div className="absolute bottom-4 right-4 font-mono text-[8px] uppercase tracking-widest text-white/30">
-            Awaiting_Signal
-          </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
         </div>
       )}
@@ -68,12 +64,8 @@ export const MemberCard: React.FC<MemberCardProps> = ({ name, division, image, i
         {name}
       </h3>
       <p className="text-[9px] md:text-[10px] font-mono font-black text-white/40 uppercase tracking-[0.3em]">
-        {division} Node
+        {division}
       </p>
-    </div>
-
-    <div className="mt-6 flex justify-center opacity-0 group-hover:opacity-20 transition-opacity">
-      <div className="text-[8px] font-mono text-white uppercase tracking-widest">Personnel_Node // {String(index + 1).padStart(2, "0")}</div>
     </div>
   </motion.div>
 );

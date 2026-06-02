@@ -1,9 +1,22 @@
 import type { Metadata, Viewport } from "next";
 import { Urbanist, Instrument_Serif, JetBrains_Mono, Gochi_Hand } from "next/font/google";
 import { Loader } from "@/src/components/ui/Loader";
+import { ScrollToTop } from "@/src/components/layout/ScrollToTop";
 import "./globals.css";
 
 const SITE_URL = "https://www.entrext.com";
+
+// Key pages surfaced in the navbar. Mirrored into SiteNavigationElement JSON-LD
+// below so search engines can offer them as sitelinks.
+const SITE_NAV = [
+  { name: "Entrext Pro", path: "/pro", description: "High-conviction co-founder matching on validated ideas." },
+  { name: "Entrext Labs", path: "/labs", description: "Experimental build space. Ship one-feature products in public." },
+  { name: "Edge", path: "/edge", description: "Marketplace for hyper-casual, skill-elevating games." },
+  { name: "Products", path: "/products", description: "Products built and validated across the Entrext ecosystem." },
+  { name: "Apply", path: "/apply", description: "Apply to build, own, and scale with Entrext." },
+  { name: "Advertise", path: "/advertise", description: "Advertise with Entrext and reach the founder ecosystem." },
+  { name: "Blog", path: "/blog", description: "Writing on building, ownership, and the studio model." },
+] as const;
 
 // Use --next-font-* names so they don't collide with Tailwind's @theme tokens
 // (--font-sans etc.), which compose them with system fallbacks in globals.css.
@@ -73,7 +86,7 @@ export const metadata: Metadata = {
     title: "Entrext. Building the World's First Technology-Owned Founder Ecosystem",
     description:
       "Not a job. You co-build and build startups here. Entrext pairs builders and growth operators to launch, validate, and scale digital products.",
-    creator: "@entrext",
+    creator: "@Entrextlabs",
   },
   icons: {
     icon: [
@@ -120,9 +133,8 @@ export default function RootLayout({
           "A bootstrapped venture studio that pairs technical builders with growth operators to launch, validate, and scale niche digital products.",
         slogan: "Build. Own. Compound.",
         sameAs: [
-          // TODO: replace with real handles when active
-          // "https://x.com/entrext",
-          // "https://www.linkedin.com/company/entrext",
+          "https://x.com/Entrextlabs",
+          "https://entrextlabs.substack.com/",
         ],
       },
       {
@@ -133,6 +145,14 @@ export default function RootLayout({
         publisher: { "@id": `${SITE_URL}#organization` },
         inLanguage: "en-US",
       },
+      // Primary navigation — gives Google a structured map of the key pages so
+      // they're eligible to surface as sitelinks under the main result.
+      ...SITE_NAV.map((item) => ({
+        "@type": "SiteNavigationElement",
+        name: item.name,
+        description: item.description,
+        url: `${SITE_URL}${item.path}`,
+      })),
     ],
   };
 
@@ -154,6 +174,7 @@ export default function RootLayout({
         >
           Skip to content
         </a>
+        <ScrollToTop />
         <Loader />
         {children}
       </body>

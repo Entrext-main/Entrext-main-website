@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export const CTA = () => {
   return (
-    <section id="join" className="py-32 md:py-40 relative flex justify-center items-center overflow-hidden">
+    <section id="join" className="py-20 md:py-28 relative flex justify-center items-center overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-black border-y border-white/5" />
       <div className="orange-glow top-0 left-1/2 -translate-x-1/2 w-[60%] h-[60%] opacity-20" />
       

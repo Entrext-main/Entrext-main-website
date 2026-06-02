@@ -7,7 +7,7 @@ import { LAYERS } from '../../constants/data';
 
 export const CoreOSInfographic = () => {
   return (
-    <section id="culture" className="py-32 md:py-60 bg-[#f8f8f8] relative overflow-hidden border-y-8 border-black">
+    <section id="culture" className="py-20 md:py-32 bg-[#f8f8f8] relative overflow-hidden border-y-8 border-black">
       <div className="absolute inset-0 opacity-[0.05] pointer-events-none" 
            style={{ backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', backgroundSize: '100px 100px' }} />
 
@@ -16,7 +16,7 @@ export const CoreOSInfographic = () => {
           
           <div className="w-full lg:w-1/3 lg:sticky lg:top-40">
             <div className="bg-black text-white p-8 md:p-12 inline-block shadow-2xl mb-8 md:mb-12 w-full">
-              <div className="text-[10px] font-mono text-[#ff4d00] mb-6 uppercase tracking-[0.5em] font-black">Strategic Stack //</div>
+              <div className="text-[10px] font-mono text-[#ff4d00] mb-6 uppercase tracking-[0.5em] font-black">Strategic Stack</div>
               <h2 className="text-5xl md:text-6xl font-black italic uppercase leading-none tracking-tighter mb-8">
                 The CORE <br/> <span className="text-[#ff4d00]">OPERATING</span> <br/> SYSTEM
               </h2>
@@ -26,14 +26,8 @@ export const CoreOSInfographic = () => {
             </div>
             
             <div className="space-y-6 md:space-y-8 border-l-4 border-black pl-6 md:pl-8">
-              <div className="space-y-2">
-                 <div className="text-[9px] md:text-[10px] font-mono text-zinc-400 font-bold uppercase tracking-widest">Protocol 01 / Integration</div>
-                 <p className="text-[10px] md:text-xs font-bold uppercase leading-tight text-black">Every layer depends on the one below it. From Founder mindset to Product output.</p>
-              </div>
-              <div className="space-y-2">
-                 <div className="text-[9px] md:text-[10px] font-mono text-zinc-400 font-bold uppercase tracking-widest">Protocol 02 / Leverage</div>
-                 <p className="text-[10px] md:text-xs font-bold uppercase leading-tight text-black">Culture is the multiplier that turns individual velocity into ecosystem growth.</p>
-              </div>
+              <p className="text-[10px] md:text-xs font-bold uppercase leading-tight text-black">Every layer depends on the one below it. From Founder mindset to Product output.</p>
+              <p className="text-[10px] md:text-xs font-bold uppercase leading-tight text-black">Culture is the multiplier that turns individual velocity into ecosystem growth.</p>
             </div>
           </div>
 
@@ -52,7 +46,7 @@ export const CoreOSInfographic = () => {
                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 md:gap-8">
                       <div className="space-y-2 md:w-1/3">
                         <div className={`text-[9px] md:text-[10px] font-mono font-black uppercase tracking-[0.3em] ${layer.id === 'COS' ? 'text-white' : 'text-[#ff4d00]'}`}>
-                          {layer.label} //
+                          {layer.label}
                         </div>
                         <h4 className="text-2xl md:text-3xl font-black italic uppercase tracking-tighter leading-none">
                           {layer.title}

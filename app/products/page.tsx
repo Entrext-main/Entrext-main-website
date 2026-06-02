@@ -33,7 +33,7 @@ export default function ProductsPage() {
           Every product teaches us something. Six shipped, categorized by niche, owned by their builders.
         </p>
 
-        <SitelinksList items={items} eyebrow="Product_Index // 02" />
+        <SitelinksList items={items} />
 
         <div className="mt-32 space-y-24">
           {PRODUCTS.map((p) => (
@@ -43,9 +43,6 @@ export default function ProductsPage() {
               className="scroll-mt-32 border-t border-white/5 pt-16"
             >
               <div className="flex items-center gap-4 mb-6">
-                <span className="font-mono text-[10px] text-[#ff4d00] uppercase tracking-[0.4em]">
-                  // {p.id}
-                </span>
                 <span className="font-mono text-[10px] text-zinc-500 uppercase tracking-widest">
                   {p.status}
                 </span>

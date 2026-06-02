@@ -114,7 +114,7 @@ export const Loader = () => {
             </div>
           </motion.div>
 
-          <div className="relative w-[82%] md:w-[78%] max-w-[1100px]">
+          <div className="relative w-full">
             {/* Animated line — scaleX gives a clean 0→1 progress value */}
             <motion.div
               className="h-px md:h-0.5 bg-white rounded-full origin-left"

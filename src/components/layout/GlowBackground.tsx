@@ -11,17 +11,6 @@ interface Particle {
 }
 
 export const TechnicalAtmosphere = () => {
-  const elements = [
-    { text: "(12+12)", top: "15%", left: "10%", delay: 0 },
-    { text: "15*6=??", top: "25%", left: "85%", delay: 2 },
-    { text: "-15+6", top: "55%", left: "15%", delay: 1 },
-    { text: "17+6-4", top: "45%", left: "75%", delay: 3 },
-    { text: "5x9 / 8", top: "70%", left: "80%", delay: 4 },
-    { text: "3y", top: "60%", left: "5%", delay: 0.5 },
-    { text: "[ 24 ]", top: "75%", left: "12%", delay: 2.5, boxed: true },
-    { text: "[ 12 ]", top: "30%", left: "90%", delay: 1.5, boxed: true },
-  ];
-
   // Particle positions are randomized — generate them after mount so SSR HTML
   // and the first client render match. Server emits an empty list; client fills in.
   const [particles, setParticles] = useState<Particle[]>([]);
@@ -38,28 +27,6 @@ export const TechnicalAtmosphere = () => {
 
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-[0.08]">
-      {elements.map((el, i) => (
-        <motion.div
-          key={i}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ 
-            opacity: [0.3, 1, 0.3],
-            y: [0, -40, 0],
-            x: [0, 10, 0]
-          }}
-          transition={{ 
-            duration: 10 + Math.random() * 5, 
-            repeat: Infinity, 
-            delay: el.delay,
-            ease: "easeInOut"
-          }}
-          style={{ top: el.top, left: el.left }}
-          className={`absolute font-mono text-zinc-400 font-bold ${el.boxed ? 'border border-zinc-500/30 p-2 text-[10px]' : 'text-xs md:text-sm'}`}
-        >
-          {el.text}
-        </motion.div>
-      ))}
-      
       <svg className="absolute inset-0 w-full h-full opacity-[0.2]" viewBox="0 0 100 100" preserveAspectRatio="none">
         <path d="M0 0 L40 40 M100 0 L60 40 M0 100 L40 60 M100 100 L60 60" stroke="#ff4d00" strokeWidth="0.05" fill="none" />
         <circle cx="50" cy="50" r="10" stroke="#ff4d00" strokeWidth="0.05" fill="none" strokeDasharray="0.1 0.1" />

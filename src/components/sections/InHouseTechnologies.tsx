@@ -44,7 +44,7 @@ export const InHouseTechnologies = () => {
   const behind = [TECHS[(index + 1) % total], TECHS[(index + 2) % total]];
 
   return (
-    <section id="technologies" className="py-24 md:py-48 bg-white relative overflow-hidden border-y border-black/5">
+    <section id="technologies" className="py-16 md:py-24 bg-white relative overflow-hidden border-y border-black/5">
       <div
         className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(circle, black 1px, transparent 1px)', backgroundSize: '30px 30px' }}
@@ -89,14 +89,14 @@ export const InHouseTechnologies = () => {
               <button
                 onClick={() => advance(-1)}
                 aria-label="Previous tech"
-                className="w-12 h-12 border border-black/10 rounded-full flex items-center justify-center hover:bg-black hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 focus-visible:ring-offset-white transition-colors"
+                className="w-12 h-12 border border-black/10 rounded-full flex items-center justify-center text-black hover:bg-black hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 focus-visible:ring-offset-white transition-colors"
               >
                 <ArrowLeft size={16} />
               </button>
               <button
                 onClick={() => advance(1)}
                 aria-label="Next tech"
-                className="w-12 h-12 border border-black/10 rounded-full flex items-center justify-center hover:bg-black hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 focus-visible:ring-offset-white transition-colors"
+                className="w-12 h-12 border border-black/10 rounded-full flex items-center justify-center text-black hover:bg-black hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 focus-visible:ring-offset-white transition-colors"
               >
                 <ArrowRight size={16} />
               </button>

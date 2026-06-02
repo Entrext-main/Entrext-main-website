@@ -15,13 +15,13 @@ export const SystemVelocityMarquee = () => {
   ];
 
   return (
-    <div className="py-12 md:py-20 bg-zinc-950 border-y border-white/5 overflow-hidden flex flex-col gap-6 md:gap-8 relative">
+    <div className="py-10 md:py-14 bg-zinc-950 border-y border-white/5 overflow-hidden flex flex-col gap-6 md:gap-8 relative">
       <div className="absolute inset-0 bg-[#ff4d00]/5 blur-[120px] rounded-full pointer-events-none" />
       
       <div className="flex whitespace-nowrap overflow-hidden">
         <motion.div 
-          animate={{ x: ["-100%", "0%"] }}
-          transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+          animate={{ x: ["-50%", "0%"] }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           className="flex gap-12 md:gap-20 items-center px-10"
         >
           {[...row1, ...row1].map((text, i) => (
@@ -35,8 +35,8 @@ export const SystemVelocityMarquee = () => {
 
       <div className="flex whitespace-nowrap overflow-hidden">
         <motion.div 
-          animate={{ x: ["0%", "-100%"] }}
-          transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
           className="flex gap-12 md:gap-20 items-center px-10"
         >
           {[...row2, ...row2].map((text, i) => (

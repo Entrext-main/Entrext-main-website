@@ -55,12 +55,12 @@ export default function BlogPage() {
           now. Sketches below.
         </p>
 
-        <SitelinksList items={items} eyebrow="Drafts // 07" />
+        <SitelinksList items={items} />
 
         <p className="mt-24 max-w-2xl text-sm text-zinc-500 italic border-t border-white/5 pt-12">
           Want a heads-up when these go live? Email{" "}
-          <a className="text-[#ff4d00] hover:underline" href="mailto:hello@entrext.com?subject=Blog%20Notify%20Me">
-            hello@entrext.com
+          <a className="text-[#ff4d00] hover:underline" href="mailto:business@entrext.com?subject=Blog%20Notify%20Me">
+            business@entrext.com
           </a>{" "}
           with subject &ldquo;Blog Notify Me&rdquo;.
         </p>

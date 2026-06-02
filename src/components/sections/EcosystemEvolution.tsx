@@ -17,7 +17,7 @@ export const EcosystemEvolution = () => {
   };
 
   return (
-    <section id="divisions" className="py-24 md:py-40 bg-zinc-950 relative overflow-hidden">
+    <section id="divisions" className="py-16 md:py-24 bg-zinc-950 relative overflow-hidden">
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]" />
       
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
@@ -30,13 +30,6 @@ export const EcosystemEvolution = () => {
               <p className="text-base md:text-lg font-medium text-white/40 italic">
                 A connected network of people, products, and capital. Every new addition makes the whole system stronger.
               </p>
-           </div>
-           <div className="hidden lg:block text-right pb-4">
-              <div className="flex items-center gap-4 justify-end mb-2">
-                 <div className="w-2 h-2 rounded-full bg-[#ff4d00] animate-pulse" />
-                 <span className="text-[10px] font-mono font-black text-white/20 uppercase tracking-widest">Growth Engine: Active</span>
-              </div>
-              <p className="text-[9px] font-mono font-black uppercase tracking-[0.4em] text-white/10">Built for Scale</p>
            </div>
         </div>
 

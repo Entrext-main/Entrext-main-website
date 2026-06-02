@@ -74,7 +74,6 @@ export const EcosystemVault = () => {
              >
                 <div className="flex items-center gap-2">
                    <div className="w-1 h-1 md:w-1.5 md:h-1.5 bg-white/40 rounded-full" />
-                   <span className="text-[6px] md:text-[8px] font-mono font-bold text-white uppercase tracking-widest">Active Product.0{i+1}</span>
                 </div>
              </motion.div>
            ))}

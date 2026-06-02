@@ -27,10 +27,26 @@ export const Footer = () => (
           </p>
           <div className="flex flex-wrap gap-6">
             <a
-              href="mailto:hello@entrext.com"
+              href="mailto:business@entrext.com"
               className="font-mono text-[10px] uppercase tracking-widest text-neutral-400 hover:text-brand-orange focus-visible:text-brand-orange focus-visible:outline-none focus-visible:underline transition-colors"
             >
-              hello@entrext.com
+              business@entrext.com
+            </a>
+            <a
+              href="https://x.com/Entrextlabs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-[10px] uppercase tracking-widest text-neutral-400 hover:text-brand-orange focus-visible:text-brand-orange focus-visible:outline-none focus-visible:underline transition-colors"
+            >
+              X ↗
+            </a>
+            <a
+              href="https://entrextlabs.substack.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-[10px] uppercase tracking-widest text-neutral-400 hover:text-brand-orange focus-visible:text-brand-orange focus-visible:outline-none focus-visible:underline transition-colors"
+            >
+              Substack ↗
             </a>
           </div>
         </div>

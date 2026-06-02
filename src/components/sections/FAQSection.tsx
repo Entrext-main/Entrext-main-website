@@ -27,11 +27,6 @@ export const FAQSection = () => {
           
           <div className="lg:col-span-4">
             <div className="lg:sticky lg:top-32">
-              <div className="flex items-center gap-4 mb-10 md:mb-16">
-                 <div className="w-12 h-[1px] bg-[#ff4d00]" />
-                 <span className="font-mono text-[9px] md:text-[10px] text-white/30 uppercase tracking-[0.5em] font-black">System_Dossier // FAQ</span>
-              </div>
-              
               <h2 className="text-6xl md:text-8xl font-sans font-black uppercase text-white mb-12 md:mb-20 leading-[0.8] tracking-tighter text-center lg:text-left">
                 THE <br/><span className="text-[#ff4d00]">FAQ.</span>
               </h2>
@@ -48,7 +43,6 @@ export const FAQSection = () => {
                           {icons[i] || <Layers size={18} />}
                         </div>
                         <div className="text-left">
-                           <div className="font-mono text-[7px] md:text-[8px] uppercase tracking-widest text-[#ff4d00] mb-0.5 md:mb-1 font-bold">{cat.id}</div>
                            <div className="font-sans font-black uppercase tracking-tighter text-xs md:text-sm">{cat.category}</div>
                         </div>
                      </div>
@@ -71,27 +65,12 @@ export const FAQSection = () => {
                    <h3 className="text-3xl md:text-5xl font-sans font-black uppercase text-white italic tracking-tighter leading-none">
                      {FAQ_DATA[activeCategory].category}
                    </h3>
-                   <div className="font-mono text-[9px] md:text-[10px] text-white/20 uppercase tracking-widest hidden md:block">
-                     Module :: {FAQ_DATA[activeCategory].id}
-                   </div>
                 </div>
 
                 <div className="space-y-4">
                    {FAQ_DATA[activeCategory].questions.map((faq, idx) => (
                      <FAQItem key={idx} question={faq.q} answer={faq.a} />
                    ))}
-                </div>
-
-                <div className="mt-12 md:mt-20 pt-8 md:pt-12 border-t border-white/5 flex flex-wrap gap-6 md:gap-12">
-                   <div className="flex items-center gap-3 bg-white/5 px-4 py-2 rounded-full border border-white/5">
-                      <div className="w-2 h-2 rounded-full bg-[#ff4d00] animate-pulse" />
-                      <span className="font-mono text-[8px] md:text-[9px] uppercase tracking-tighter text-white/40">Status: Verified</span>
-                   </div>
-                   <div className="flex items-center gap-3 bg-white/5 px-4 py-2 rounded-full border border-white/5">
-                      <span className="font-mono text-[8px] md:text-[9px] uppercase tracking-tighter text-white/40">
-                        Last Update: {new Date().toLocaleString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })}
-                      </span>
-                   </div>
                 </div>
              </motion.div>
           </div>

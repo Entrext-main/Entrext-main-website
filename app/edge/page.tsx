@@ -58,10 +58,9 @@ export default function EdgePage() {
           execution, made playable.
         </p>
 
-        <SitelinksList items={items} eyebrow="Edge_Index // 06" />
+        <SitelinksList items={items} />
 
         <section id="overview" className="scroll-mt-32 mt-32 border-t border-white/5 pt-16">
-          <span className="font-mono text-[10px] text-[#ff4d00] uppercase tracking-[0.4em]">// 01 Marketplace</span>
           <h2 className="mt-4 text-4xl md:text-6xl font-display italic text-white mb-6 tracking-tight">
             Games that make you better.
           </h2>
@@ -73,7 +72,6 @@ export default function EdgePage() {
         </section>
 
         <section id="frameworks" className="scroll-mt-32 mt-24 border-t border-white/5 pt-16">
-          <span className="font-mono text-[10px] text-[#ff4d00] uppercase tracking-[0.4em]">// 02 Frameworks</span>
           <h2 className="mt-4 text-4xl md:text-6xl font-display italic text-white mb-6 tracking-tight">
             Infra over surface.
           </h2>
@@ -85,7 +83,6 @@ export default function EdgePage() {
         </section>
 
         <section id="submit" className="scroll-mt-32 mt-24 border-t border-white/5 pt-16">
-          <span className="font-mono text-[10px] text-[#ff4d00] uppercase tracking-[0.4em]">// 03 Submit</span>
           <h2 className="mt-4 text-4xl md:text-6xl font-display italic text-white mb-6 tracking-tight">
             Submit a game.
           </h2>
@@ -95,7 +92,7 @@ export default function EdgePage() {
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">03</span><span>Distribution, discoverability, and shared infra come with the platform.</span></li>
           </ul>
           <a
-            href="mailto:hello@entrext.com?subject=Edge%20Submission"
+            href="mailto:submissions@entrext.com?subject=Edge%20Submission"
             className="inline-flex items-center gap-4 bg-[#ff4d00] text-white px-10 py-5 rounded-md font-black text-[10px] uppercase tracking-[0.4em] hover:-translate-y-1 transition-transform shadow-[0_20px_50px_rgba(255,77,0,0.2)]"
           >
             Pitch a game

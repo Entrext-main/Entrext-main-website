@@ -48,7 +48,7 @@ const PHASES: Phase[] = [
         label: "Primary Partner",
         tagline: "Lead the build. Own the direction.",
         bullets: [
-          "Up to 12% equity",
+          "20% fixed + 5% performance-based (up to 25%)",
           "You bring the idea and conviction",
           "Ship fast, validate in public",
           "Full ownership from 0 → 1",
@@ -61,7 +61,7 @@ const PHASES: Phase[] = [
         label: "Secondary Partner",
         tagline: "Join signal. Complete the system.",
         bullets: [
-          "Up to 8% equity",
+          "20% fixed + 5% performance-based (up to 25%)",
           "Join after early validation",
           "Bring the missing skill (tech ↔ growth)",
           "Build from momentum, not chaos",
@@ -85,7 +85,7 @@ const PHASES: Phase[] = [
         label: "Founding Tech",
         tagline: "Build the system. Own execution.",
         bullets: [
-          "10% equity (flat)",
+          "20% fixed equity",
           "Lead technical architecture and product",
           "Work alongside a growth counterpart",
           "Full-time commitment, no Plan B",
@@ -98,7 +98,7 @@ const PHASES: Phase[] = [
         label: "Founding Growth",
         tagline: "Drive distribution. Own scale.",
         bullets: [
-          "10% equity (flat)",
+          "20% fixed equity",
           "Lead GTM, distribution, and traction",
           "Work alongside a technical builder",
           "Full-time commitment, no Plan B",
@@ -187,7 +187,7 @@ const items: SitelinkItem[] = PHASES.map((p) => ({
 
 const resolveHref = (track: Track) =>
   track.applyHref ??
-  `mailto:hello@entrext.com?subject=${encodeURIComponent(`Application: ${track.label}`)}`;
+  `mailto:hr@entrext.com?subject=${encodeURIComponent(`Application: ${track.label}`)}`;
 
 export default function ApplyPage() {
   return (

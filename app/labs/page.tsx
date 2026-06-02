@@ -26,7 +26,7 @@ const items: SitelinkItem[] = [
   },
   {
     label: "Equity at Labs",
-    description: "Up to 12% Primary, up to 8% Secondary. Solo full-stack founder: 20%, no split.",
+    description: "Primary & Secondary: 20% fixed + 5% performance (up to 25%). Solo founder: 40% flat.",
     href: "#equity",
   },
   {
@@ -58,10 +58,9 @@ export default function LabsPage() {
           products and validating ideas in public.
         </p>
 
-        <SitelinksList items={items} eyebrow="Labs_Index // 05" />
+        <SitelinksList items={items} />
 
         <section id="process" className="scroll-mt-32 mt-32 border-t border-white/5 pt-16">
-          <span className="font-mono text-[10px] text-[#ff4d00] uppercase tracking-[0.4em]">// 01 Process</span>
           <h2 className="mt-4 text-4xl md:text-6xl font-display italic text-white mb-6 tracking-tight">
             Build in public, scale in pairs.
           </h2>
@@ -73,7 +72,6 @@ export default function LabsPage() {
         </section>
 
         <section id="velocity" className="scroll-mt-32 mt-24 border-t border-white/5 pt-16">
-          <span className="font-mono text-[10px] text-[#ff4d00] uppercase tracking-[0.4em]">// 02 Velocity</span>
           <h2 className="mt-4 text-4xl md:text-6xl font-display italic text-white mb-6 tracking-tight">
             Velocity is the product.
           </h2>
@@ -86,14 +84,13 @@ export default function LabsPage() {
         </section>
 
         <section id="equity" className="scroll-mt-32 mt-24 border-t border-white/5 pt-16">
-          <span className="font-mono text-[10px] text-[#ff4d00] uppercase tracking-[0.4em]">// 03 Equity</span>
           <h2 className="mt-4 text-4xl md:text-6xl font-display italic text-white mb-6 tracking-tight">
             What you walk away with.
           </h2>
           <ul className="space-y-3 max-w-2xl text-zinc-300 leading-relaxed">
-            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">01</span><span>Primary Partner: up to 12%. Your idea, you lead.</span></li>
-            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">02</span><span>Secondary Partner: up to 8%. Join validated momentum.</span></li>
-            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">03</span><span>Solo founder with both skills: 20%, no split.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">01</span><span>Primary Partner: 20% fixed + 5% performance-based (up to 25%). Your idea, you lead.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">02</span><span>Secondary Partner: 20% fixed + 5% performance-based (up to 25%). Join validated momentum.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">03</span><span>Solo founder (Labs or Pro): 40% flat.</span></li>
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">04</span><span>Entrext covers tools, infra, and growth distribution. Zero upfront cost for full-time founders.</span></li>
           </ul>
         </section>

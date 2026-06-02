@@ -6,21 +6,14 @@ import { SEVEN_CS } from '../../constants/data';
 
 export const PrinciplesSection = () => {
   return (
-    <section id="principles" className="py-24 md:py-40 bg-[#ffffff] relative overflow-hidden">
+    <section id="principles" className="py-16 md:py-24 bg-[#ffffff] relative overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
-        <div className="flex flex-col lg:flex-row justify-between items-end mb-20 md:mb-32 gap-12 md:gap-16">
+        <div className="flex flex-col lg:flex-row justify-between items-end mb-12 md:mb-20 gap-12 md:gap-16">
           <div className="max-w-2xl text-center md:text-left">
             <span className="font-mono text-[9px] md:text-[10px] text-[#ff4d00] uppercase tracking-[0.4em] md:tracking-[0.6em] mb-4 md:mb-6 block font-black">Architecture of Execution</span>
             <h2 className="text-5xl md:text-7xl lg:text-9xl font-sans font-black uppercase tracking-tighter text-black leading-[0.8] mb-8 md:mb-12">
               Founding <br/><span className="opacity-10">Principles.</span>
             </h2>
-          </div>
-          <div className="hidden lg:block text-right pb-4">
-             <div className="flex items-center gap-4 justify-end mb-2">
-                <div className="w-2 h-2 rounded-full bg-[#ff4d00]" />
-                <span className="text-[10px] font-mono font-black text-black/20 uppercase tracking-widest">Protocol: Active_Standard</span>
-             </div>
-             <p className="text-[9px] font-mono font-black uppercase tracking-[0.4em] text-black/10">Version Control // Permanent</p>
           </div>
         </div>
 
@@ -42,7 +35,6 @@ export const PrinciplesSection = () => {
               ))}
               
               <div className="group bg-zinc-950 p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] flex flex-col justify-between min-h-[140px] md:min-h-[160px]">
-                 <span className="text-[9px] md:text-[10px] font-mono font-black text-[#ff4d00] uppercase tracking-[0.3em]">07 // Global_Core</span>
                  <h4 className="text-2xl md:text-3xl font-sans font-black uppercase tracking-tighter text-white leading-none">
                    We always <br/><span className="text-[#ff4d00]">find a way.</span>
                  </h4>

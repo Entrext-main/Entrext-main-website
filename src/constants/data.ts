@@ -168,6 +168,7 @@ export const PRODUCTS = [
     signal: "Customer feedback widget for SaaS and mobile apps. Turn feedback into product decisions faster.",
     color: "text-blue-400",
     glow: "shadow-blue-500/20",
+    href: "https://monkfeed.entrext.com/",
     preview: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
   },
   {
@@ -184,6 +185,7 @@ export const PRODUCTS = [
     signal: "A platform where women entrepreneurs become easier to discover, trust, and choose.",
     color: "text-pink-400",
     glow: "shadow-pink-500/20",
+    href: "https://herth.entrext.in/",
     preview: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop"
   },
   {
@@ -200,6 +202,7 @@ export const PRODUCTS = [
     signal: "In a world full of travelers, why not have a planet built for travelers?",
     color: "text-purple-400",
     glow: "shadow-purple-500/20",
+    href: "https://guava.entrext.com/",
     preview: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=2070&auto=format&fit=crop"
   },
   {
@@ -257,7 +260,7 @@ export const FAQ_DATA = [
     category: "Ownership & Equity",
     id: "OWN-01",
     questions: [
-      { q: "What equity split do I get?", a: "Labs Primary → up to 12% | Labs Secondary → up to 8% | Pro → 10% each (both partners, flat) | Solo founder (both skills) → 20%, no split" },
+      { q: "What equity split do I get?", a: "Labs Primary → 20% fixed + 5% performance-based (up to 25%) | Labs Secondary → 20% fixed + 5% performance-based (up to 25%) | Pro → 20% fixed (both partners) | Solo founder (Labs or Pro) → 40% flat" },
       { q: "Do I own my product or does Entrext own it?", a: "Co-ownership. You get a board seat. Entrext holds studio equity, you hold founder equity." },
       { q: "What happens if I leave?", a: "6-month cliff, 4–5 year vesting. You keep only what you've earned." },
       { q: "Can I be diluted?", a: "Not the plan. Bootstrapped-first studio. Won't happen without your knowledge." }

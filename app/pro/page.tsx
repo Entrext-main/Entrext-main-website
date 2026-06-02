@@ -21,7 +21,7 @@ const items: SitelinkItem[] = [
   },
   {
     label: "Equity & ownership",
-    description: "10% each. Both partners, flat. 6-month cliff, 4–5 year vesting.",
+    description: "20% fixed each. Both partners. 6-month cliff, 4–5 year vesting.",
     href: "#equity",
   },
   {
@@ -62,10 +62,9 @@ export default function ProPage() {
           Where validated ideas meet serious & committed founders. Conviction over convenience.
         </p>
 
-        <SitelinksList items={items} eyebrow="Pro_Index // 04" />
+        <SitelinksList items={items} />
 
         <section id="matching" className="scroll-mt-32 mt-32 border-t border-white/5 pt-16">
-          <span className="font-mono text-[10px] text-[#ff4d00] uppercase tracking-[0.4em]">// 01 Matching</span>
           <h2 className="mt-4 text-4xl md:text-6xl font-display italic text-white mb-6 tracking-tight">
             Built around conviction.
           </h2>
@@ -77,12 +76,11 @@ export default function ProPage() {
         </section>
 
         <section id="equity" className="scroll-mt-32 mt-24 border-t border-white/5 pt-16">
-          <span className="font-mono text-[10px] text-[#ff4d00] uppercase tracking-[0.4em]">// 02 Equity</span>
           <h2 className="mt-4 text-4xl md:text-6xl font-display italic text-white mb-6 tracking-tight">
-            10% each. Flat.
+            20% fixed each.
           </h2>
           <ul className="space-y-3 max-w-2xl text-zinc-300 leading-relaxed">
-            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">01</span><span>Both partners get 10%. No founder/co-founder hierarchy on cap table.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">01</span><span>Both partners get 20% fixed. No founder/co-founder hierarchy on cap table.</span></li>
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">02</span><span>6-month cliff, 4–5 year vesting. Leave early, you keep what you&apos;ve earned.</span></li>
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">03</span><span>Bootstrapped-first studio. Dilution requires your knowledge.</span></li>
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">04</span><span>You hold founder equity, Entrext holds studio equity. Co-ownership, board seat included.</span></li>
@@ -90,7 +88,6 @@ export default function ProPage() {
         </section>
 
         <section id="founders" className="scroll-mt-32 mt-24 border-t border-white/5 pt-16">
-          <span className="font-mono text-[10px] text-[#ff4d00] uppercase tracking-[0.4em]">// 03 Profile</span>
           <h2 className="mt-4 text-4xl md:text-6xl font-display italic text-white mb-6 tracking-tight">
             No Plan B.
           </h2>
