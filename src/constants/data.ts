@@ -267,10 +267,10 @@ export const FAQ_DATA = [
     category: "Money & Resources",
     id: "CAP-02",
     questions: [
-      { q: "Do you fund the product?", a: "No one funds it upfront. You build from zero — frugality is the philosophy." },
-      { q: "Who pays for tools, infra, marketing?", a: "Entrext covers all of it. Growth is organic-first — content and brand over paid ads." },
+      { q: "Do you fund the product?", a: "No one funds it upfront. You build from zero. Frugality is the philosophy." },
+      { q: "Who pays for tools, infra, marketing?", a: "Entrext covers all of it. Growth is organic-first: content and brand over paid ads." },
       { q: "When do I see returns?", a: "Within a month if you're serious. Launch in under a week, first paying customers follow fast." },
-      { q: "Is there a joining cost?", a: "Only if part-time — and it's fully refunded once the product scales. Full-time founders pay nothing." }
+      { q: "Is there a joining cost?", a: "Only if part-time, and it's fully refunded once the product scales. Full-time founders pay nothing." }
     ]
   },
   {
@@ -280,7 +280,7 @@ export const FAQ_DATA = [
       { q: "How do I apply?", a: "Form or referral from an existing Entrext founder. That's it." },
       { q: "What founders do you accept?", a: "Serious, full-time. Experience doesn't matter. Having a Plan B means Plan A won't work." },
       { q: "How competitive?", a: "One shot per person per year. 5 Labs teams + 5 Pro teams = 10 spots annually." },
-      { q: "Primary or Secondary — how do I choose?", a: "Primary = your idea, you lead, higher reward, higher accountability. Secondary = join proven momentum, lower risk, real stake." }
+      { q: "Primary or Secondary: how do I choose?", a: "Primary = your idea, you lead, higher reward, higher accountability. Secondary = join proven momentum, lower risk, real stake." }
     ]
   },
   {

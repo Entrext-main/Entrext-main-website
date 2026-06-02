@@ -8,7 +8,7 @@ import { SitelinksList, SitelinkItem } from "@/src/components/ui/SitelinksList";
 export const metadata: Metadata = {
   title: "Entrext-Labs",
   description:
-    "Entrext-Labs: an experimentation space for early-stage founders building one-feature applications from scratch — journey of 0 to 100.",
+    "Entrext-Labs: an experimentation space for early-stage founders building one-feature applications from scratch. The 0-to-100 journey.",
   alternates: { canonical: "/labs" },
   openGraph: { url: "/labs", title: "Entrext-Labs · Entrext" },
 };
@@ -67,8 +67,8 @@ export default function LabsPage() {
           </h2>
           <p className="text-base md:text-lg text-zinc-400 max-w-2xl leading-relaxed">
             Labs is where the studio runs experiments. You start solo or with a single skill set, ship a
-            one-feature product, watch the metric. If it pulls, the &ldquo;opposite partner&rdquo; — tech if
-            you&apos;re growth, growth if you&apos;re tech — joins to scale it into a real system.
+            one-feature product, watch the metric. If it pulls, the &ldquo;opposite partner&rdquo; (tech if
+            you&apos;re growth, growth if you&apos;re tech) joins to scale it into a real system.
           </p>
         </section>
 
@@ -91,8 +91,8 @@ export default function LabsPage() {
             What you walk away with.
           </h2>
           <ul className="space-y-3 max-w-2xl text-zinc-300 leading-relaxed">
-            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">01</span><span>Primary Partner: up to 12% — your idea, you lead.</span></li>
-            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">02</span><span>Secondary Partner: up to 8% — join validated momentum.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">01</span><span>Primary Partner: up to 12%. Your idea, you lead.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">02</span><span>Secondary Partner: up to 8%. Join validated momentum.</span></li>
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">03</span><span>Solo founder with both skills: 20%, no split.</span></li>
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">04</span><span>Entrext covers tools, infra, and growth distribution. Zero upfront cost for full-time founders.</span></li>
           </ul>

@@ -49,7 +49,7 @@ export const Hero = () => {
               We pair tech builders and growth operators to launch, validate, and scale niche digital products. This is not a place to get hired. It is a place to build, own, and compound products over time.
             </p>
             <p className="font-display italic text-xl md:text-2xl text-white leading-snug tracking-tight border-l-2 border-[#ff4d00] pl-4 md:pl-5 mb-10 md:mb-12">
-              Not a job — you co-build and build startups here.
+              Not a job. You co-build and build startups here.
             </p>
           </motion.div>
 

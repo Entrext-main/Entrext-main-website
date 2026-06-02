@@ -15,7 +15,7 @@ const items: SitelinkItem[] = [
   { label: "Advertise", description: "Sponsorships and partnerships across the Entrext network.", href: "/advertise" },
   { label: "Products", description: "Six shipped products and the journey behind each one.", href: "/products" },
   { label: "Apply", description: "Primary, Secondary, and Volunteer Mentor partner tracks.", href: "/apply" },
-  { label: "FAQ", description: "Equity, money, selection, ops — the full dossier.", href: "/#faq" },
+  { label: "FAQ", description: "Equity, money, selection, ops. The full dossier.", href: "/#faq" },
 ];
 
 export default function NotFound() {

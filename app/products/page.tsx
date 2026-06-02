@@ -16,7 +16,7 @@ const slug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
 const items: SitelinkItem[] = PRODUCTS.map((p) => ({
   label: p.name,
-  description: `${p.category} — ${p.signal}`,
+  description: `${p.category}. ${p.signal}`,
   href: `#${slug(p.name)}`,
 }));
 
@@ -30,7 +30,7 @@ export default function ProductsPage() {
           Products
         </h1>
         <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-16 md:mb-24 leading-relaxed">
-          Every product teaches us something. Six shipped — categorized by niche, owned by their builders.
+          Every product teaches us something. Six shipped, categorized by niche, owned by their builders.
         </p>
 
         <SitelinksList items={items} eyebrow="Product_Index // 02" />

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const items: SitelinkItem[] = [
   {
     label: "The bootstrapped studio playbook",
-    description: "How we run 15–20 Labs experiments without external capital — and why we keep it that way.",
+    description: "How we run 15–20 Labs experiments without external capital, and why we keep it that way.",
     disabled: true,
   },
   {
@@ -52,7 +52,7 @@ export default function BlogPage() {
         </h1>
         <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-16 md:mb-24 leading-relaxed">
           Long-form posts on building, ownership, and the studio model. We&apos;re drafting the first batch
-          now — sketches below.
+          now. Sketches below.
         </p>
 
         <SitelinksList items={items} eyebrow="Drafts // 07" />

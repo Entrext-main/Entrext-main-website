@@ -28,7 +28,7 @@ export const EcosystemEvolution = () => {
                 Living <span className="text-white/20">Growth.</span>
               </h2>
               <p className="text-base md:text-lg font-medium text-white/40 italic">
-                A connected network of people, products, and capital—where every new addition makes the whole system stronger.
+                A connected network of people, products, and capital. Every new addition makes the whole system stronger.
               </p>
            </div>
            <div className="hidden lg:block text-right pb-4">

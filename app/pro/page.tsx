@@ -21,7 +21,7 @@ const items: SitelinkItem[] = [
   },
   {
     label: "Equity & ownership",
-    description: "10% each — both partners, flat. 6-month cliff, 4–5 year vesting.",
+    description: "10% each. Both partners, flat. 6-month cliff, 4–5 year vesting.",
     href: "#equity",
   },
   {
@@ -36,7 +36,7 @@ const items: SitelinkItem[] = [
   },
   {
     label: "Read the FAQ",
-    description: "Equity, money, selection, ops — every question answered.",
+    description: "Equity, money, selection, ops. Every question answered.",
     href: "/#faq",
   },
 ];
@@ -71,7 +71,7 @@ export default function ProPage() {
           </h2>
           <p className="text-base md:text-lg text-zinc-400 max-w-2xl leading-relaxed">
             Pro pairs a tech builder with a growth operator on a Entrext-validated idea. Both partners
-            commit full-time, both hold real equity, both ship together. We don&apos;t introduce — we match,
+            commit full-time, both hold real equity, both ship together. We don&apos;t introduce. We match,
             and only when the conviction is mutual.
           </p>
         </section>
@@ -82,7 +82,7 @@ export default function ProPage() {
             10% each. Flat.
           </h2>
           <ul className="space-y-3 max-w-2xl text-zinc-300 leading-relaxed">
-            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">01</span><span>Both partners get 10% — no founder/co-founder hierarchy on cap table.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">01</span><span>Both partners get 10%. No founder/co-founder hierarchy on cap table.</span></li>
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">02</span><span>6-month cliff, 4–5 year vesting. Leave early, you keep what you&apos;ve earned.</span></li>
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">03</span><span>Bootstrapped-first studio. Dilution requires your knowledge.</span></li>
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">04</span><span>You hold founder equity, Entrext holds studio equity. Co-ownership, board seat included.</span></li>
@@ -95,7 +95,7 @@ export default function ProPage() {
             No Plan B.
           </h2>
           <p className="text-base md:text-lg text-zinc-400 max-w-2xl leading-relaxed">
-            Experience doesn&apos;t matter. Conviction does. Having a Plan B means Plan A won&apos;t work — that&apos;s
+            Experience doesn&apos;t matter. Conviction does. Having a Plan B means Plan A won&apos;t work. That&apos;s
             why we cap at 5 Pro teams a year. Apply once, give it everything, ship in under a week, find
             paying customers in a month. The math works only if you&apos;re all in.
           </p>

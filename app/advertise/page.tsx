@@ -33,7 +33,7 @@ const items: SitelinkItem[] = [
   {
     label: "Apply as Founding Partner",
     description:
-      "Not advertising — joining. Build, own, and compound a product alongside us.",
+      "Not advertising. Joining. Build, own, and compound a product alongside us.",
     href: "/apply",
   },
 ];

@@ -8,7 +8,7 @@ import { SitelinksList, SitelinkItem } from "@/src/components/ui/SitelinksList";
 export const metadata: Metadata = {
   title: "Edge Foundation",
   description:
-    "Edge Foundation: marketplace for hyper-casual gaming. Games that make you better — focus, discipline, execution, made playable.",
+    "Edge Foundation: marketplace for hyper-casual gaming. Games that make you better. Focus, discipline, execution, made playable.",
   alternates: { canonical: "/edge" },
   openGraph: { url: "/edge", title: "Edge Foundation · Entrext" },
 };
@@ -54,7 +54,7 @@ export default function EdgePage() {
           Edge <span className="opacity-20 text-brand-orange italic">Foundation.</span>
         </h1>
         <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-16 md:mb-24 leading-relaxed">
-          Marketplace for Hyper-Casual Gaming. Games that make you better — focus, discipline,
+          Marketplace for Hyper-Casual Gaming. Games that make you better. Focus, discipline,
           execution, made playable.
         </p>
 
@@ -68,7 +68,7 @@ export default function EdgePage() {
           <p className="text-base md:text-lg text-zinc-400 max-w-2xl leading-relaxed">
             Edge is the gaming wing of the studio. Hyper-casual, hyper-creative, skill-elevating.
             Everything we publish is designed to compound a player&apos;s ability to focus, decide, and
-            execute — entertainment as performance training.
+            execute. Entertainment as performance training.
           </p>
         </section>
 
@@ -79,7 +79,7 @@ export default function EdgePage() {
           </h2>
           <p className="text-base md:text-lg text-zinc-400 max-w-2xl leading-relaxed">
             We build performance frameworks, not just titles. Each Edge release is an interactive
-            paradigm shift — moving players from surface execution to infrastructure thinking. Mechanics
+            paradigm shift. Moving players from surface execution to infrastructure thinking. Mechanics
             are the message.
           </p>
         </section>

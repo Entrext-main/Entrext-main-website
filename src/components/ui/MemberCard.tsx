@@ -32,7 +32,7 @@ export const MemberCard: React.FC<MemberCardProps> = ({ name, division, image, i
         <div className="relative w-full h-full">
           <img
             src={image}
-            alt={`${name} — ${division.toLowerCase()} division at Entrext`}
+            alt={`${name}, ${division.toLowerCase()} division at Entrext`}
             loading="lazy"
             decoding="async"
             className="w-full h-full object-cover grayscale brightness-75 contrast-125 group-hover:scale-110 group-hover:brightness-100 group-hover:grayscale-0 transition-all duration-1000"
