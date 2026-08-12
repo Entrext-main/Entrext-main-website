@@ -20,9 +20,14 @@ const items: SitelinkItem[] = [
     href: "#process",
   },
   {
-    label: "0 → 100 in a week",
+    label: "0 → 1 in a week",
     description: "Launch under a week. First paying customers within a month. Velocity over perfection.",
     href: "#velocity",
+  },
+  {
+    label: "Graduating from Labs",
+    description: "Hit the checkpoint, prove demand, get matched with a Secondary Partner.",
+    href: "#graduation",
   },
   {
     label: "Equity at Labs",
@@ -54,8 +59,8 @@ export default function LabsPage() {
           Entrext-Labs
         </h1>
         <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-16 md:mb-24 leading-relaxed">
-          The experimental build space. Growth thinkers and technical builders shipping one-feature
-          products and validating ideas in public.
+          Where ideas become an opportunity. Stage one of the founder journey: 0 → 1. A Primary Founder
+          brings a thesis, builds and tests it in public, and proves there&apos;s real demand.
         </p>
 
         <SitelinksList items={items} />
@@ -81,6 +86,23 @@ export default function LabsPage() {
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">03</span><span>Meets every alternate day. Everything else is flexible.</span></li>
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">04</span><span>15–20 active Labs products at any time.</span></li>
           </ul>
+        </section>
+
+        <section id="graduation" className="scroll-mt-32 mt-24 border-t border-white/5 pt-16">
+          <h2 className="mt-4 text-4xl md:text-6xl font-display italic text-white mb-6 tracking-tight">
+            Four things. Not three.
+          </h2>
+          <p className="text-base md:text-lg text-zinc-400 max-w-2xl leading-relaxed mb-8">
+            To graduate from Labs into Pro, you need a common pattern across users, evidence of viable
+            scalability, basic competition analysis, and a minimum of 50 paying customers — all four,
+            not three. Clear it, and we match you with the Secondary Partner who completes the team.
+          </p>
+          <div className="inline-flex items-center gap-3 rounded-full border border-[#ff4d00]/30 bg-[#ff4d00]/5 px-6 py-3">
+            <span className="font-mono text-[9px] text-zinc-500 uppercase tracking-widest">Graduation target</span>
+            <span className="font-sans font-black text-white uppercase text-sm">
+              $1K MRR (B2C / Services) or $5K MRR (B2B SaaS)
+            </span>
+          </div>
         </section>
 
         <section id="equity" className="scroll-mt-32 mt-24 border-t border-white/5 pt-16">

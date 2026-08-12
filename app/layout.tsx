@@ -9,13 +9,14 @@ const SITE_URL = "https://www.entrext.com";
 // Key pages surfaced in the navbar. Mirrored into SiteNavigationElement JSON-LD
 // below so search engines can offer them as sitelinks.
 const SITE_NAV = [
-  { name: "Entrext Pro", path: "/pro", description: "High-conviction co-founder matching on validated ideas." },
   { name: "Entrext Labs", path: "/labs", description: "Experimental build space. Ship one-feature products in public." },
-  { name: "Edge", path: "/edge", description: "Marketplace for hyper-casual, skill-elevating games." },
+  { name: "Entrext Pro", path: "/pro", description: "High-conviction co-founder matching on validated ideas." },
+  { name: "Match", path: "/match", description: "Register your skill set and get matched to a validated Entrext product." },
   { name: "Products", path: "/products", description: "Products built and validated across the Entrext ecosystem." },
   { name: "Apply", path: "/apply", description: "Apply to build, own, and scale with Entrext." },
+  { name: "Brain", path: "/brain", description: "The running record of what Entrext is building and learning." },
   { name: "Advertise", path: "/advertise", description: "Advertise with Entrext and reach the founder ecosystem." },
-  { name: "Blog", path: "/blog", description: "Writing on building, ownership, and the studio model." },
+  { name: "Newsroom", path: "/newsroom", description: "Writing on building, ownership, and the studio model." },
 ] as const;
 
 // Use --next-font-* names so they don't collide with Tailwind's @theme tokens
@@ -68,7 +69,7 @@ export const metadata: Metadata = {
     "Entrext",
     "Entrext Pro",
     "Entrext Labs",
-    "Edge Foundation",
+    "Entrext Match",
     "advertise with Entrext",
   ],
   alternates: { canonical: "/" },

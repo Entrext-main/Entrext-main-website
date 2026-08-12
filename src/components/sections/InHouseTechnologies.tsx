@@ -2,14 +2,14 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence, useReducedMotion, type PanInfo } from 'motion/react';
-import { Zap, Cpu, Mail, Users, ArrowLeft, ArrowRight, type LucideIcon } from 'lucide-react';
+import { Zap, Cpu, Database, Users, ArrowLeft, ArrowRight, type LucideIcon } from 'lucide-react';
 import { TECHS } from '../../constants/data';
 
 const ICON_MAP: Record<string, LucideIcon> = {
   Monkfeed: Zap,
-  Arctic: Cpu,
-  Automailer: Mail,
-  Introbuddy: Users,
+  Eleven: Cpu,
+  Arctic: Database,
+  Match: Users,
 };
 
 const SWIPE_THRESHOLD = 120; // px — past this, the card commits to advancing

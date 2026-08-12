@@ -8,15 +8,15 @@ import Link from "next/link";
 
 // Replace href values with real division URLs once they're live.
 const divisionLinks = [
-  { name: "Pro",   href: "/pro",   logo: "/logos/pro.webp" },
   { name: "Labs",  href: "/labs",  logo: "/logos/labs.webp" },
-  { name: "Edge",  href: "/edge",  logo: "/logos/edge.webp" },
+  { name: "Pro",   href: "/pro",   logo: "/logos/pro.webp" },
 ];
 
 const secondaryLinks = [
   { name: "Products",  href: "/products" },
-  { name: "Blog",      href: "/blog" },
-  { name: "Apply",     href: "/apply" },
+  { name: "Match",     href: "/match" },
+  { name: "Newsroom",  href: "/newsroom" },
+  { name: "Brain",     href: "/brain" },
   { name: "Advertise", href: "/advertise" },
 ];
 

@@ -8,14 +8,16 @@ import { GlowBackground } from "@/src/components/layout/GlowBackground";
 import { Navbar } from "@/src/components/layout/Navbar";
 import { Footer } from "@/src/components/layout/Footer";
 import { Hero } from "@/src/components/sections/Hero";
+import { OfferingPillars } from "@/src/components/sections/OfferingPillars";
 import { FoundingMembers } from "@/src/components/sections/FoundingMembers";
-import { EcosystemEvolution } from "@/src/components/sections/EcosystemEvolution";
+import { FounderJourney } from "@/src/components/sections/FounderJourney";
 import { SystemVelocityMarquee } from "@/src/components/sections/SystemVelocityMarquee";
 import { ProductPuzzle } from "@/src/components/sections/ProductPuzzle";
 import { PrinciplesSection } from "@/src/components/sections/PrinciplesSection";
 import { InHouseTechnologies } from "@/src/components/sections/InHouseTechnologies";
 import { WhoThisIsFor } from "@/src/components/sections/WhoThisIsFor";
 import { CoreOSInfographic } from "@/src/components/sections/CoreOSInfographic";
+import { PathToCompany } from "@/src/components/sections/PathToCompany";
 import { CTA } from "@/src/components/sections/CTA";
 import { FAQSection } from "@/src/components/sections/FAQSection";
 
@@ -27,12 +29,15 @@ export default function Home() {
       
       <main id="main" className="relative">
         <Hero />
-        
+
+        {/* Ecosystem / Match / VSaaS overview */}
+        <OfferingPillars />
+
         {/* Personnel Section */}
         <FoundingMembers />
 
-        {/* Ecosystem & Divisions */}
-        <EcosystemEvolution />
+        {/* Founder Journey: Labs -> Pro -> Graduation */}
+        <FounderJourney />
 
         {/* Dynamic Velocity Marquee */}
         <SystemVelocityMarquee />
@@ -51,6 +56,9 @@ export default function Home() {
 
         {/* Operating System / Culture */}
         <CoreOSInfographic />
+
+        {/* Primary vs Secondary Partner Journey */}
+        <PathToCompany />
 
         {/* Final Conversion */}
         <CTA />

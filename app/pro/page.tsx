@@ -20,6 +20,11 @@ const items: SitelinkItem[] = [
     href: "#matching",
   },
   {
+    label: "What happens in Pro",
+    description: "Build the product, scale distribution, incorporate, and spin off from Entrext.",
+    href: "#build",
+  },
+  {
     label: "Equity & ownership",
     description: "20% fixed each. Both partners. 6-month cliff, 4–5 year vesting.",
     href: "#equity",
@@ -59,7 +64,8 @@ export default function ProPage() {
           Entrext-Pro
         </h1>
         <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-16 md:mb-24 leading-relaxed">
-          Where validated ideas meet serious & committed founders. Conviction over convenience.
+          Where the opportunity starts becoming a real product. Stage two of the founder journey: 1 → 10.
+          Once demand is proven in Labs, we help the founding team build the company around it.
         </p>
 
         <SitelinksList items={items} />
@@ -73,6 +79,24 @@ export default function ProPage() {
             commit full-time, both hold real equity, both ship together. We don&apos;t introduce. We match,
             and only when the conviction is mutual.
           </p>
+        </section>
+
+        <section id="build" className="scroll-mt-32 mt-24 border-t border-white/5 pt-16">
+          <h2 className="mt-4 text-4xl md:text-6xl font-display italic text-white mb-6 tracking-tight">
+            From product to company.
+          </h2>
+          <ul className="space-y-3 max-w-2xl text-zinc-300 leading-relaxed mb-8">
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">01</span><span>Build the product.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">02</span><span>Scale sales & distribution.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">03</span><span>Refine the business model.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">04</span><span>Set up the legal company and spin off from Entrext.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">05</span><span>Build the first team and establish systems & processes.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">06</span><span>Bootstrap or raise funding when the time is right.</span></li>
+          </ul>
+          <div className="inline-flex items-center gap-3 rounded-full border border-[#ff4d00]/30 bg-[#ff4d00]/5 px-6 py-3">
+            <span className="font-mono text-[9px] text-zinc-500 uppercase tracking-widest">Graduation target</span>
+            <span className="font-sans font-black text-white uppercase text-sm">$10K MRR</span>
+          </div>
         </section>
 
         <section id="equity" className="scroll-mt-32 mt-24 border-t border-white/5 pt-16">

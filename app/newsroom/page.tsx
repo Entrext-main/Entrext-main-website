@@ -5,10 +5,10 @@ import { GlowBackground } from "@/src/components/layout/GlowBackground";
 import { SitelinksList, SitelinkItem } from "@/src/components/ui/SitelinksList";
 
 export const metadata: Metadata = {
-  title: "Blogs and Articles",
+  title: "Newsroom",
   description: "Read the latest on tech and entrepreneurship published by Entrext.",
-  alternates: { canonical: "/blog" },
-  // Blog is still drafting — keep stub out of the index until posts ship.
+  alternates: { canonical: "/newsroom" },
+  // Newsroom is still drafting — keep stub out of the index until posts ship.
   robots: { index: false, follow: true },
 };
 
@@ -29,26 +29,26 @@ const items: SitelinkItem[] = [
     disabled: true,
   },
   {
-    label: "From 0 → 100 in a week",
+    label: "0 to 1 in a week",
     description: "The Entrext launch loop: idea, ship, validate, kill or scale. With timestamps from real Labs products.",
     disabled: true,
   },
   {
     label: "Return to the homepage",
-    description: "Head back to the main site while we finish the blog.",
+    description: "Head back to the main site while we finish the Newsroom.",
     href: "/",
   },
 ];
 
-export default function BlogPage() {
+export default function NewsroomPage() {
   return (
     <div className="min-h-screen pt-32">
       <GlowBackground />
       <Navbar />
       <main id="main" className="max-w-[1100px] mx-auto px-6 md:px-12 pb-32">
         <h1 className="text-6xl md:text-8xl font-sans font-black uppercase text-white mb-8 leading-[0.9]">
-          Blogs and <br />
-          <span className="opacity-20 italic">Articles.</span>
+          News <br />
+          <span className="opacity-20 italic">room.</span>
         </h1>
         <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-16 md:mb-24 leading-relaxed">
           Long-form posts on building, ownership, and the studio model. We&apos;re drafting the first batch
@@ -59,10 +59,10 @@ export default function BlogPage() {
 
         <p className="mt-24 max-w-2xl text-sm text-zinc-500 italic border-t border-white/5 pt-12">
           Want a heads-up when these go live? Email{" "}
-          <a className="text-[#ff4d00] hover:underline" href="mailto:business@entrext.com?subject=Blog%20Notify%20Me">
+          <a className="text-[#ff4d00] hover:underline" href="mailto:business@entrext.com?subject=Newsroom%20Notify%20Me">
             business@entrext.com
           </a>{" "}
-          with subject &ldquo;Blog Notify Me&rdquo;.
+          with subject &ldquo;Newsroom Notify Me&rdquo;.
         </p>
       </main>
       <Footer />

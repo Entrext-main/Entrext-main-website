@@ -13,6 +13,8 @@ const nextConfig = {
       // /ecosystem was renamed/retired in favour of the home page hero (founder
       // ecosystem positioning) and /advertise. 301 preserves indexed SEO equity.
       { source: "/ecosystem", destination: "/", permanent: true },
+      // Blog was renamed Newsroom.
+      { source: "/blog", destination: "/newsroom", permanent: true },
     ];
   },
 };

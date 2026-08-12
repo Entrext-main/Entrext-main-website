@@ -54,9 +54,9 @@ export const Footer = () => (
         <div>
           <h5 className="font-mono text-xs uppercase font-bold mb-8 text-neutral-500">Engine //</h5>
           <ul className="space-y-4 text-sm">
-            <li><Link href="/pro" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Entrext Pro</Link></li>
             <li><Link href="/labs" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Entrext Labs</Link></li>
-            <li><Link href="/edge" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Edge Foundation</Link></li>
+            <li><Link href="/pro" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Entrext Pro</Link></li>
+            <li><Link href="/match" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Match</Link></li>
             <li><Link href="/products" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Products</Link></li>
           </ul>
         </div>
@@ -67,7 +67,7 @@ export const Footer = () => (
             <li><Link href="/apply#primary" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Apply as Partner</Link></li>
             <li><Link href="/advertise" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Advertise</Link></li>
             <li><Link href="/#faq" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">FAQ</Link></li>
-            <li><Link href="/blog" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Blog</Link></li>
+            <li><Link href="/newsroom" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Newsroom</Link></li>
           </ul>
         </div>
       </div>

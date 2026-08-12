@@ -15,36 +15,6 @@ export const SEVEN_CS = [
   { title: "Continuous Feedback", desc: "Iterate fast", id: "06" }
 ];
 
-export const DIVISIONS = [
-  {
-    id: "LABS",
-    title: "Entrext Labs",
-    tagline: "The Experimental Build Space",
-    desc: "An experimental space where growth thinkers and technical builders rapidly ship one-feature products and validate ideas in public.",
-    subDesc: "Once validated, the right “opposite partner” joins to scale the product into a larger system, suite, or standalone business.",
-    status: "BUILD_ACTIVE",
-    color: "border-white/10"
-  },
-  {
-    id: "PRO",
-    title: "Entrext Pro",
-    tagline: "High-Conviction Matching",
-    desc: "Where validated ideas meet committed co-founders. Matching built around conviction, not convenience.",
-    subDesc: "Connecting technical rigor with growth conviction to build resilient, founder-led systems.",
-    status: "NODE_READY",
-    color: "border-[#ff4d00]/30"
-  },
-  {
-    id: "EDGE",
-    title: "Edge",
-    tagline: "Hyper-Casual Gaming Marketplace",
-    desc: "Games that make you better. Hyper-creative, skill-elevating experiences designed for focus, growth, and execution.",
-    subDesc: "Moving from surface execution to infra thinking through interactive paradigm shifts.",
-    status: "IP_LIVE",
-    color: "border-white/10"
-  }
-];
-
 export type Division = "TECH" | "GROWTH";
 
 export interface Member {
@@ -57,48 +27,43 @@ export interface Member {
 // Interleaved Tech/Growth so the marquee feels mixed rather than blocky.
 // Photos are WebP (compressed via scripts/compress-photos.mjs).
 export const MEMBERS: Member[] = [
-  { name: "Ikshit",   division: "TECH",   image: "/members/tech/ikshit.webp" },
   { name: "Hitender", division: "GROWTH", image: "/members/growth/hitender.webp" },
-  { name: "Taha",     division: "TECH",   image: "/members/tech/taha.webp" },
   { name: "Manthan",  division: "TECH",   image: "/members/tech/manthan.webp" },
   { name: "Kritika",  division: "GROWTH", image: "/members/growth/kritika.webp" },
   { name: "Garv",     division: "TECH",   image: "/members/tech/garv.webp" },
-  { name: "Ranim",    division: "GROWTH", image: "/members/growth/ranim.webp" },
   { name: "Disha",    division: "TECH",   image: "/members/tech/disha.webp" },
   { name: "Janet",    division: "GROWTH", image: "/members/growth/janet.webp" },
-  { name: "Ashish",   division: "TECH",   image: "/members/tech/ashish.webp" },
-  { name: "Mohit",    division: "TECH",   image: "/members/tech/mohit.webp" },
   { name: "Surya",    division: "TECH",   image: "/members/tech/surya.webp" },
   { name: "Aryan",    division: "TECH",   image: "/members/tech/aryan.webp" },
   { name: "Saumya",   division: "TECH",   image: "/members/tech/saumya.webp" },
 ];
 
 export const TECHS = [
-  { 
-    name: "Monkfeed", 
-    desc: "Sharper positioning & ownership compression for builders. From chaos to clarity.", 
+  {
+    name: "Monkfeed",
+    desc: "Sharper positioning & ownership compression for builders. From chaos to clarity.",
     id: "M_01",
     color: "text-[#ff4d00]",
     bg: "bg-[#ff4d00]/5",
   },
-  { 
-    name: "Arctic", 
-    desc: "High-performance infrastructure layer for rapid deployment and ultra-lean operations.", 
-    id: "A_02",
+  {
+    name: "Eleven",
+    desc: "Entrext's own operating system — the internal infrastructure that runs how we build, ship, and scale every product in the studio.",
+    id: "E_02",
     color: "text-blue-500",
     bg: "bg-blue-500/5",
   },
-  { 
-    name: "Automailer", 
-    desc: "Automated distribution & engagement engine. Scale your reach without the overhead.", 
-    id: "AM_03",
+  {
+    name: "Arctic",
+    desc: "Started as our internal infra layer. Now a standalone CMS, built in-house and open for anyone to run their own content stack.",
+    id: "A_03",
     color: "text-emerald-500",
     bg: "bg-emerald-500/5",
   },
-  { 
-    name: "Introbuddy", 
-    desc: "Intent-driven network connection & sync framework for meaningful interaction.", 
-    id: "IB_04",
+  {
+    name: "Match",
+    desc: "Matchmaking algorithm pairing founders through 20+ alignment scorings. Find your co-founder, or find each other — we facilitate either way.",
+    id: "MT_04",
     color: "text-purple-500",
     bg: "bg-purple-500/5",
   }
@@ -190,68 +155,63 @@ export const PRODUCTS = [
   },
   {
     id: "03",
-    name: "Guava",
-    category: "Travel Community",
-    builders: "Ikshit, Ranim",
-    status: "Released March 2026",
+    name: "Singularity",
+    category: "AI Workspace for Builders",
+    builders: "Garv, Kritika",
+    status: "Released December 2025",
     journey: [
-      "Began as an AI product cluster",
-      "Introduced deeper validation cycles",
-      "Pivoted into a travel community"
+      "Started as an internal AI tooling experiment",
+      "Opened up after builders outside Entrext asked for access",
+      "Rebuilt into a standalone AI workspace"
     ],
-    signal: "In a world full of travelers, why not have a planet built for travelers?",
-    color: "text-purple-400",
-    glow: "shadow-purple-500/20",
-    href: "https://guava.entrext.com/",
-    preview: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=2070&auto=format&fit=crop"
+    signal: "One workspace for every AI tool a builder actually uses. No more ten tabs open.",
+    color: "text-indigo-400",
+    glow: "shadow-indigo-500/20"
   },
   {
     id: "04",
-    name: "Noa",
-    category: "AI Prompt Discovery",
-    builders: "Taha",
-    status: "Released July 2025",
+    name: "STAGE",
+    category: "Creator Launch Platform",
+    builders: "Surya, Janet",
+    status: "Released January 2026",
     journey: [
-      "Rethinking how people interact with systems",
-      "Building shared protocols across the ecosystem",
-      "Moving from execution to infrastructure thinking"
+      "Began as a way to help Labs founders demo products publicly",
+      "Evolved into a platform for creators and builders to launch in front of an audience",
+      "Shifted focus from one-off demos to ongoing creator growth"
     ],
-    signal: "A new way to discover prompts, compare analyses, and figure out the best results.",
-    color: "text-cyan-400",
-    glow: "shadow-cyan-500/20",
-    preview: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop"
+    signal: "Everyone needs a stage. This is where builders go to launch in public.",
+    color: "text-amber-400",
+    glow: "shadow-amber-500/20"
   },
   {
     id: "05",
-    name: "Companion",
-    category: "Human Connection",
-    builders: "Foundry Core",
-    status: "Released Feb 2026",
+    name: "Secretroom",
+    category: "Private Founder Network",
+    builders: "Aryan, Hitender",
+    status: "Released February 2026",
     journey: [
-      "Moved away from commoditized use cases",
-      "Shifted toward interaction-based frameworks",
-      "Rebuilt around intent-driven coordination"
+      "Started as an invite-only channel for Entrext founders to compare notes",
+      "Opened to founders outside the studio by request",
+      "Grew into curated private rooms organized by stage and sector"
     ],
-    signal: "A new way to find people who truly listen to you.",
-    color: "text-[#ff4d00]",
-    glow: "shadow-[#ff4d00]/20",
-    preview: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=2098&auto=format&fit=crop"
+    signal: "The conversations founders actually want to have, behind a door that's actually closed.",
+    color: "text-rose-400",
+    glow: "shadow-rose-500/20"
   },
   {
     id: "06",
-    name: "Knowx",
-    category: "Co-founder Matchmaking",
-    builders: "Manthan + Team",
-    status: "Released Jan 2024",
+    name: "Soho Space",
+    category: "Creative Coworking Marketplace",
+    builders: "Saumya, Disha",
+    status: "Released March 2026",
     journey: [
-      "Survived founding partner changes",
-      "Maintained direction through instability",
-      "Built a more resilient execution model"
+      "Started as a way to book Entrext's own studio space between teams",
+      "Opened bookings to outside creatives and small teams",
+      "Grew into a marketplace for creative coworking spaces citywide"
     ],
-    signal: "Tinder for co-founders.",
-    color: "text-zinc-400",
-    glow: "shadow-zinc-500/20",
-    preview: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
+    signal: "Find the room, book the room, do the work. No leases, no long-term contracts.",
+    color: "text-teal-400",
+    glow: "shadow-teal-500/20"
   }
 ];
 
@@ -293,7 +253,7 @@ export const FAQ_DATA = [
       { q: "Day-to-day?", a: "Meets every alternate day. Everything else is flexible." },
       { q: "My idea or Entrext's?", a: "Labs → your idea. Pro → Entrext's validated idea." },
       { q: "Time to launch?", a: "Under a week to ship. ~1 month to validate. Velocity over perfection." },
-      { q: "How many products running?", a: "Pro: 5/year. Labs: 15–20/year. n/edge (games marketplace): 20–40 new games/year." }
+      { q: "How many products running?", a: "Pro: 5/year. Labs: 15–20/year." }
     ]
   }
 ];

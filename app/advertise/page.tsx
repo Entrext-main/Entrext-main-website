@@ -7,7 +7,7 @@ import { SitelinksList, SitelinkItem } from "@/src/components/ui/SitelinksList";
 export const metadata: Metadata = {
   title: "Advertise",
   description:
-    "Reach Entrext's network of founders, builders, and growth operators across Labs, Pro, and Edge. Sponsorships, product placements, and ecosystem partnerships.",
+    "Reach Entrext's network of founders, builders, and growth operators across Labs and Pro. Sponsorships, product placements, and ecosystem partnerships.",
   alternates: { canonical: "/advertise" },
   openGraph: {
     url: "/advertise",
@@ -21,7 +21,7 @@ const items: SitelinkItem[] = [
   {
     label: "Advertise With Us",
     description:
-      "Sponsor placements across Entrext Labs, Pro, and Edge. Reach a focused, builder-first audience.",
+      "Sponsor placements across Entrext Labs and Pro. Reach a focused, builder-first audience.",
     href: "https://tally.so/r/ob5P0V",
   },
   {

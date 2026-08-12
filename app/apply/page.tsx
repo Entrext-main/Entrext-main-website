@@ -8,7 +8,7 @@ import { SitelinksList, SitelinkItem } from "@/src/components/ui/SitelinksList";
 export const metadata: Metadata = {
   title: "Apply",
   description:
-    "Apply to Entrext: Labs, Pro, Edge, and the Ecosystem layer. Pick the track that matches the bet you're making: Primary, Secondary, Founding Tech, Founding Growth, Builder, Partnerships, or Mentor.",
+    "Apply to Entrext: Labs, Pro, and the Ecosystem layer. Pick the track that matches the bet you're making: Primary, Secondary, Founding Tech, Founding Growth, Partnerships, or Mentor.",
   alternates: { canonical: "/apply" },
   openGraph: { url: "/apply", title: "Apply · Entrext" },
 };
@@ -109,42 +109,6 @@ const PHASES: Phase[] = [
     ],
   },
   {
-    id: "edge",
-    eyebrow: "Phase 03",
-    title: "Edge",
-    subtitle: "Hyper-Casual Gaming Marketplace",
-    description:
-      "Games that make you better. Hyper-creative, skill-elevating experiences designed for focus, growth, and execution.",
-    logo: "/logos/edge.webp",
-    tracks: [
-      {
-        id: "edge-builder",
-        label: "Apply as a Builder",
-        tagline: "Ship fast inside the system.",
-        bullets: [
-          "Build inside the Edge layer",
-          "Focus on hyper-casual / marketplace / gaming",
-          "Leverage distribution + rapid iteration",
-          "High-speed execution, lower ownership",
-        ],
-        ctaLabel: "Apply as Builder",
-        applyHref: null,
-      },
-      {
-        id: "edge-idea",
-        label: "Submit an Idea",
-        tagline: "Test before commitment.",
-        bullets: [
-          "Share ideas without full-time entry",
-          "Validate concepts early",
-          "Optional path into Labs or Edge",
-        ],
-        ctaLabel: "Submit an Idea",
-        applyHref: null,
-      },
-    ],
-  },
-  {
     id: "ecosystem",
     eyebrow: "Layer",
     title: "Ecosystem",
@@ -200,7 +164,7 @@ export default function ApplyPage() {
           <span className="opacity-20 text-brand-orange italic">Partner up.</span>
         </h1>
         <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-16 md:mb-24 leading-relaxed">
-          Four phases, eight tracks, one studio. Pick the bet you&apos;re actually making. Plan-B
+          Three phases, six tracks, one studio. Pick the bet you&apos;re actually making. Plan-B
           applications stand out, not in the way you&apos;d hope.
         </p>
 

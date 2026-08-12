@@ -8,11 +8,11 @@ import Image from "next/image";
 //
 // Sequence (first thing every visitor sees):
 //   1. Full-screen brand-orange canvas.
-//   2. White hairline draws across the centre. As it passes 20 / 50 / 80 % of
-//      its run, the Pro / Labs / Edge logo pops in *on* the line — like the
+//   2. White hairline draws across the centre. As it passes 33 / 66 % of
+//      its run, the Labs / Pro logo pops in *on* the line — like the
 //      line is dropping them off. A booting counter in the bottom-right
 //      ticks 000 → 100 in sync with the line.
-//   3. Brief hold so the trio reads.
+//   3. Brief hold so the pair reads.
 //   4. Five vertical brand-orange panels slide up off-screen, revealing the
 //      site underneath.
 //
@@ -20,9 +20,8 @@ import Image from "next/image";
 // between phase 1 and phase 2 is visually seamless.
 
 const SLOTS = [
-  { src: "/logos/pro.webp",  alt: "Entrext Pro",     label: "Pro",  position: 20 },
-  { src: "/logos/labs.webp", alt: "Entrext Labs",    label: "Labs", position: 50 },
-  { src: "/logos/edge.webp", alt: "Edge Foundation", label: "Edge", position: 80 },
+  { src: "/logos/labs.webp", alt: "Entrext Labs", label: "Labs", position: 33 },
+  { src: "/logos/pro.webp",  alt: "Entrext Pro",  label: "Pro",  position: 66 },
 ];
 
 const LINE_DURATION_S = 2.4;

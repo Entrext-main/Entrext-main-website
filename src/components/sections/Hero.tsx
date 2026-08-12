@@ -43,7 +43,7 @@ export const Hero = () => {
             className="max-w-xl text-zinc-500"
           >
             <h2 className="text-xl md:text-3xl font-bold text-white mb-6 uppercase tracking-tight leading-tight">
-              The Equity-First Venture Studio Where Founders Build, Own, and Scale Together.
+              The venture studio where founders validate products, find co-founders, and build companies together.
             </h2>
             <p className="text-sm md:text-lg leading-relaxed uppercase tracking-tight font-bold opacity-80 mb-6 md:mb-8">
               We pair tech builders and growth operators to launch, validate, and scale niche digital products. This is not a place to get hired. It is a place to build, own, and compound products over time.
