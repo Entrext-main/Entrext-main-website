@@ -64,7 +64,7 @@ export const Footer = () => (
         <div>
           <h5 className="font-mono text-xs uppercase font-bold mb-8 text-neutral-500">Contact //</h5>
           <ul className="space-y-4 text-sm">
-            <li><Link href="/apply#primary" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Apply as Partner</Link></li>
+            <li><Link href="/apply#labs-primary" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Apply as Partner</Link></li>
             <li><Link href="/advertise" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Advertise</Link></li>
             <li><Link href="/#faq" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">FAQ</Link></li>
             <li><Link href="/newsroom" className="text-neutral-400 hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline transition-colors">Newsroom</Link></li>

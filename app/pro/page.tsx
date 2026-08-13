@@ -35,9 +35,9 @@ const items: SitelinkItem[] = [
     href: "#founders",
   },
   {
-    label: "Apply to Pro",
-    description: "Five Pro spots open per year. One shot per person.",
-    href: "/apply#primary",
+    label: "Start in Labs",
+    description: "Pro has no direct apply track — you graduate in from Labs, or get matched in.",
+    href: "/apply#labs-primary",
   },
   {
     label: "Read the FAQ",

@@ -8,7 +8,7 @@ import { SitelinksList, SitelinkItem } from "@/src/components/ui/SitelinksList";
 export const metadata: Metadata = {
   title: "Apply",
   description:
-    "Apply to Entrext: Labs, Pro, and the Ecosystem layer. Pick the track that matches the bet you're making: Primary, Secondary, Founding Tech, Founding Growth, Partnerships, or Mentor.",
+    "Six tracks, one studio. Primary Partner, Secondary Partner, Mentor/Advisor, Match by Entrext, Venture Studio as a Service, and Partnerships.",
   alternates: { canonical: "/apply" },
   openGraph: { url: "/apply", title: "Apply · Entrext" },
 };
@@ -28,7 +28,7 @@ type Phase = {
   eyebrow: string;
   title: string;
   subtitle: string;
-  description: string;
+  description?: string;
   logo?: string;
   tracks: Track[];
 };
@@ -40,104 +40,114 @@ const PHASES: Phase[] = [
     title: "Entrext Labs",
     subtitle: "The Experimental Build Space",
     description:
-      "An experimental space where growth thinkers and technical builders rapidly ship one-feature products and validate ideas in public. Once validated, the right opposite partner joins to scale.",
+      "Take an idea from 0 → 1. Build quickly, validate with real customers, and prove whether the opportunity is worth pursuing.",
     logo: "/logos/labs.webp",
     tracks: [
       {
         id: "labs-primary",
-        label: "Primary Partner",
-        tagline: "Lead the build. Own the direction.",
+        label: "Primary Partner — Tech / Build or Growth / Sales",
+        tagline: "Lead the opportunity. Build your side. Own the 0 → 1.",
         bullets: [
-          "20% fixed + 5% performance-based (up to 25%)",
-          "You bring the idea and conviction",
-          "Ship fast, validate in public",
-          "Full ownership from 0 → 1",
+          "20% fixed + 5% performance-based — up to 25%",
+          "Bring the idea and lead the opportunity",
+          "Tech / Build: build the product and lead the technical side",
+          "Growth / Sales: find customers, drive distribution, and prove demand",
+          "Ship fast, validate in public, and learn from what works",
         ],
         ctaLabel: "Apply as Primary Partner",
-        applyHref: "https://tally.so/r/449675",
+        applyHref: "https://tally.so/r/7R01Vz",
       },
       {
         id: "labs-secondary",
-        label: "Secondary Partner",
-        tagline: "Join signal. Complete the system.",
+        label: "Secondary Partner — Tech / Build or Growth / Sales",
+        tagline: "Support the opportunity. Execute with the team. Grow alongside it.",
         bullets: [
-          "20% fixed + 5% performance-based (up to 25%)",
-          "Join after early validation",
-          "Bring the missing skill (tech ↔ growth)",
-          "Build from momentum, not chaos",
+          "5% fixed + 2.5% performance-based — up to 7.5%",
+          "Join a primary partner and contribute to the opportunity",
+          "Tech / Build: support product development and execution",
+          "Growth / Sales: support customer acquisition, distribution, and validation",
+          "Work closely with the primary partner from 0 → 1",
+          "Ship fast, learn fast, and build real ownership through execution",
         ],
         ctaLabel: "Apply as Secondary Partner",
-        applyHref: "https://tally.so/r/LZarMj",
+        applyHref: "https://tally.so/r/449675",
+      },
+      {
+        id: "labs-mentor",
+        label: "Mentor / Advisor",
+        tagline: "Help founders move faster.",
+        bullets: [
+          "Guide Entrext founders and teams",
+          "Share experience, feedback, and perspective",
+          "Office hours and async support",
+          "Build relationships across the Entrext ecosystem",
+        ],
+        ctaLabel: "Apply as Mentor/Advisor",
+        applyHref: "https://tally.so/r/7R01j0",
       },
     ],
   },
   {
-    id: "pro",
+    id: "match",
     eyebrow: "Phase 02",
-    title: "Entrext Pro",
-    subtitle: "High-Conviction Matching",
-    description:
-      "Where validated ideas meet committed co-founders. Matching built around conviction, not convenience. Two operators, one product. Both full-time, both holding real equity, both shipping together.",
-    logo: "/logos/pro.webp",
+    title: "Match by Entrext",
+    subtitle: "Find the other half.",
+    description: "Match is a separate founder matchmaking initiative.",
     tracks: [
       {
-        id: "pro-tech",
-        label: "Founding Tech",
-        tagline: "Build the system. Own execution.",
+        id: "match-register",
+        label: "Register for Match",
+        tagline: "20+ alignment factors. About 6 months, done right.",
         bullets: [
-          "20% fixed equity",
-          "Lead technical architecture and product",
-          "Work alongside a growth counterpart",
-          "Full-time commitment, no Plan B",
+          "Register your skills, interests, ambitions, working style, and areas of conviction",
+          "We analyze 20+ alignment factors to help identify people who could complement you",
+          "You can also bring your own co-founder",
+          "We usually allow around 6 months to find and build the right founder fit — the goal isn't to fill a position quickly, it's to find the right person to build with",
         ],
-        ctaLabel: "Apply as Founding Tech",
-        applyHref: null,
-      },
-      {
-        id: "pro-growth",
-        label: "Founding Growth",
-        tagline: "Drive distribution. Own scale.",
-        bullets: [
-          "20% fixed equity",
-          "Lead GTM, distribution, and traction",
-          "Work alongside a technical builder",
-          "Full-time commitment, no Plan B",
-        ],
-        ctaLabel: "Apply as Founding Growth",
-        applyHref: null,
+        ctaLabel: "Join Match by Entrext",
+        applyHref: "https://tally.so/r/5Be7q6",
       },
     ],
   },
   {
-    id: "ecosystem",
-    eyebrow: "Layer",
-    title: "Ecosystem",
-    subtitle: "Leverage without full-time commitment",
-    description:
-      "For senior operators and aligned partners who want signal and contribution inside Entrext without a full-time bet.",
+    id: "vsaas",
+    eyebrow: "Phase 03",
+    title: "VSaaS",
+    subtitle: "If you're looking for a specific service from us.",
     tracks: [
       {
-        id: "partnerships",
-        label: "Partnerships",
-        tagline: "Strategic alignment, not a paycheck.",
+        id: "vsaas-service",
+        label: "Venture Studio as a Service",
+        tagline: "Expertise, on demand.",
         bullets: [
-          "Collaborate on distribution, infra, or ecosystem",
-          "Strategic alignment with Entrext",
+          "Bring Entrext into your company to validate ideas, discover opportunities, or build new ventures",
+          "Get our team for consultation, research, strategy, reporting, and execution",
+          "MVP development, AI automation, tools, GTM, and customer acquisition when needed",
+          "We can also help you find the right co-founders, operators, and technical talent",
+          "Use exactly what you need. Whenever you need it.",
+        ],
+        ctaLabel: "Fill Up Here — We'll Reach Out",
+        applyHref: "https://tally.so/r/pbqR58",
+      },
+    ],
+  },
+  {
+    id: "partnerships",
+    eyebrow: "Others",
+    title: "Partnerships",
+    subtitle: "Build alongside Entrext.",
+    tracks: [
+      {
+        id: "partnerships-apply",
+        label: "Partnerships",
+        tagline: "Build alongside Entrext.",
+        bullets: [
+          "Collaborate on distribution, infrastructure, products, or ecosystem",
+          "Create strategic partnerships with Entrext",
+          "Explore opportunities to build mutual value",
         ],
         ctaLabel: "Apply for Partnerships",
         applyHref: "https://tally.so/r/rjJ40v",
-      },
-      {
-        id: "mentor",
-        label: "Mentor",
-        tagline: "Compound through advice.",
-        bullets: [
-          "Guide 1–3 teams per cycle",
-          "Office hours + async reviews",
-          "No equity, relationship-driven",
-        ],
-        ctaLabel: "Apply as Mentor",
-        applyHref: "https://tally.so/r/5Be7q6",
       },
     ],
   },
@@ -164,8 +174,7 @@ export default function ApplyPage() {
           <span className="opacity-20 text-brand-orange italic">Partner up.</span>
         </h1>
         <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-16 md:mb-24 leading-relaxed">
-          Three phases, six tracks, one studio. Pick the bet you&apos;re actually making. Plan-B
-          applications stand out, not in the way you&apos;d hope.
+          Six tracks. One studio. Choose the role that matches what you want to build.
         </p>
 
         <SitelinksList items={items} eyebrow="Application Tracks" />
@@ -253,10 +262,18 @@ export default function ApplyPage() {
           ))}
         </div>
 
-        <p className="mt-32 max-w-2xl text-sm text-zinc-500 italic border-t border-white/5 pt-12">
-          Each track has its own form. Pick the one that matches the bet you&apos;re making, and write
-          plainly about who you are, what you&apos;ve shipped, and why you&apos;re applying.
-        </p>
+        <div className="mt-32 max-w-2xl border-t border-white/5 pt-16">
+          <h2 className="text-3xl md:text-5xl font-sans font-black uppercase tracking-tighter text-white mb-4 leading-[0.95]">
+            Pick your track.
+          </h2>
+          <p className="font-display italic text-xl md:text-2xl text-white/70 mb-6 leading-snug">
+            Build. Grow. Match. Mentor. Partner.
+          </p>
+          <p className="text-sm md:text-base text-zinc-500 leading-relaxed">
+            Choose the role that reflects the bet you&apos;re actually making. Be clear about who you
+            are, what you bring, and what you want to build.
+          </p>
+        </div>
       </main>
       <Footer />
     </div>

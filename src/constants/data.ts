@@ -220,7 +220,7 @@ export const FAQ_DATA = [
     category: "Ownership & Equity",
     id: "OWN-01",
     questions: [
-      { q: "What equity split do I get?", a: "Labs Primary → 20% fixed + 5% performance-based (up to 25%) | Labs Secondary → 20% fixed + 5% performance-based (up to 25%) | Pro → 20% fixed (both partners) | Solo founder (Labs or Pro) → 40% flat" },
+      { q: "What equity split do I get?", a: "Labs Primary → 20% fixed + 5% performance-based (up to 25%) | Labs Secondary → 5% fixed + 2.5% performance-based (up to 7.5%) | Pro → 20% fixed (both partners) | Solo founder (Labs or Pro) → 40% flat" },
       { q: "Do I own my product or does Entrext own it?", a: "Co-ownership. You get a board seat. Entrext holds studio equity, you hold founder equity." },
       { q: "What happens if I leave?", a: "6-month cliff, 4–5 year vesting. You keep only what you've earned." },
       { q: "Can I be diluted?", a: "Not the plan. Bootstrapped-first studio. Won't happen without your knowledge." }

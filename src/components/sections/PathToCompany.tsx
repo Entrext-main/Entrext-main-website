@@ -72,7 +72,7 @@ const PATHS: Path[] = [
       {
         id: "04",
         title: "Own Your Function",
-        desc: "Growth or Tech — you own your lane completely. Real equity, same terms as a Primary Partner: 20% fixed + 5% performance-based, up to 25%.",
+        desc: "Growth or Tech — you own your lane completely. Real equity, clear terms: 5% fixed + 2.5% performance-based, up to 7.5%.",
       },
       {
         id: "05",

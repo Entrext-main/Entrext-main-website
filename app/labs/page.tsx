@@ -31,13 +31,13 @@ const items: SitelinkItem[] = [
   },
   {
     label: "Equity at Labs",
-    description: "Primary & Secondary: 20% fixed + 5% performance (up to 25%). Solo founder: 40% flat.",
+    description: "Primary: 20% fixed + 5% performance (up to 25%). Secondary: 5% fixed + 2.5% (up to 7.5%).",
     href: "#equity",
   },
   {
     label: "Apply to Labs",
     description: "Five Labs teams open per year. 15–20 active products at any time.",
-    href: "/apply#primary",
+    href: "/apply#labs-primary",
   },
 ];
 
@@ -111,7 +111,7 @@ export default function LabsPage() {
           </h2>
           <ul className="space-y-3 max-w-2xl text-zinc-300 leading-relaxed">
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">01</span><span>Primary Partner: 20% fixed + 5% performance-based (up to 25%). Your idea, you lead.</span></li>
-            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">02</span><span>Secondary Partner: 20% fixed + 5% performance-based (up to 25%). Join validated momentum.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">02</span><span>Secondary Partner: 5% fixed + 2.5% performance-based (up to 7.5%). Join validated momentum.</span></li>
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">03</span><span>Solo founder (Labs or Pro): 40% flat.</span></li>
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">04</span><span>Entrext covers tools, infra, and growth distribution. Zero upfront cost for full-time founders.</span></li>
           </ul>
