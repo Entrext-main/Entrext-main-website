@@ -130,24 +130,24 @@ export const PRODUCTS = [
       "Hitender joined during a key growth phase",
       "Rebranded to Monkfeed, shifting toward faster execution"
     ],
-    signal: "Customer feedback widget for SaaS and mobile apps. Turn feedback into product decisions faster.",
-    color: "text-blue-400",
-    glow: "shadow-blue-500/20",
+    signal: "The easiest way to collect, manage, and prioritize customer feedback — built for product teams who care about their users' voice.",
+    color: "text-[#ff4d00]",
+    glow: "shadow-[#ff4d00]/20",
     href: "https://monkfeed.entrext.com/",
     preview: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
   },
   {
     id: "02",
     name: "Herth",
-    category: "Hyper-Local Commerce",
+    category: "Hyper-Local Networking Platform",
     builders: "Garv, Kritika",
     status: "Released Jan 2026",
     journey: [
       "Started with supporting founders",
       "Evolved into an ecosystem-focused layer",
-      "Focused on organic women-led commerce"
+      "Focused on organic women-led networking"
     ],
-    signal: "A platform where women entrepreneurs become easier to discover, trust, and choose.",
+    signal: "A hyper-local networking platform for women entrepreneurs to discover, connect, learn, and collaborate with each other.",
     color: "text-pink-400",
     glow: "shadow-pink-500/20",
     href: "https://herth.entrext.in/",
@@ -156,60 +156,60 @@ export const PRODUCTS = [
   {
     id: "03",
     name: "Singularity",
-    category: "AI Workspace for Builders",
-    builders: "Garv, Kritika",
+    category: "Gaming Studio",
+    builders: "Aryan, Shruthi",
     status: "Released December 2025",
     journey: [
-      "Started as an internal AI tooling experiment",
-      "Opened up after builders outside Entrext asked for access",
-      "Rebuilt into a standalone AI workspace"
+      "Started by creating intellectual games with Aryan, our founding member",
+      "Built a game marketplace with Shruthi, our founding designer",
+      "Now building a studio for intellectual, unconventional games"
     ],
-    signal: "One workspace for every AI tool a builder actually uses. No more ten tabs open.",
+    signal: "A gaming studio to create and discover amazing, unconventional games — all in one place.",
     color: "text-indigo-400",
     glow: "shadow-indigo-500/20"
   },
   {
     id: "04",
     name: "STAGE",
-    category: "Creator Launch Platform",
-    builders: "Surya, Janet",
+    category: "Visual Feedback & QA Platform",
+    builders: "Saumya, Disha",
     status: "Released January 2026",
     journey: [
-      "Began as a way to help Labs founders demo products publicly",
-      "Evolved into a platform for creators and builders to launch in front of an audience",
-      "Shifted focus from one-off demos to ongoing creator growth"
+      "Started by Saumya as the primary partner, originally called Pexel Mark",
+      "Disha joined as the operating partner and refined it with Entrext",
+      "Now a feedback layer connecting developers, agencies, and clients"
     ],
-    signal: "Everyone needs a stage. This is where builders go to launch in public.",
+    signal: "Instantly share secure, interactive review links to collect visual feedback, annotations, and QA bug reports directly on live web pages. The fastest way to sign off website changes.",
     color: "text-amber-400",
     glow: "shadow-amber-500/20"
   },
   {
     id: "05",
     name: "Secretroom",
-    category: "Private Founder Network",
-    builders: "Aryan, Hitender",
+    category: "Anonymous Chat Platform",
+    builders: "Komal",
     status: "Released February 2026",
     journey: [
-      "Started as an invite-only channel for Entrext founders to compare notes",
-      "Opened to founders outside the studio by request",
-      "Grew into curated private rooms organized by stage and sector"
+      "First-ever Entrext product built in under 24 hours",
+      "Komal joined as the solo founding engineer to build it",
+      "Now figuring out the right distribution"
     ],
-    signal: "The conversations founders actually want to have, behind a door that's actually closed.",
+    signal: "Free anonymous chat platform.",
     color: "text-rose-400",
     glow: "shadow-rose-500/20"
   },
   {
     id: "06",
     name: "Soho Space",
-    category: "Creative Coworking Marketplace",
-    builders: "Saumya, Disha",
-    status: "Released March 2026",
+    category: "Contest-Based Hiring Platform",
+    builders: "Disha, Charan",
+    status: "Early Access — Validating Demand",
     journey: [
-      "Started as a way to book Entrext's own studio space between teams",
-      "Opened bookings to outside creatives and small teams",
-      "Grew into a marketplace for creative coworking spaces citywide"
+      "Started as an equity-based founder hiring platform",
+      "Pivoted into a performance-driven, contest-based job platform",
+      "Now validating demand, with Disha & Charan as founding members"
     ],
-    signal: "Find the room, book the room, do the work. No leases, no long-term contracts.",
+    signal: "Optimizing the hiring space by building something needful. Still in its early stage.",
     color: "text-teal-400",
     glow: "shadow-teal-500/20"
   }
@@ -220,40 +220,40 @@ export const FAQ_DATA = [
     category: "Ownership & Equity",
     id: "OWN-01",
     questions: [
-      { q: "What equity split do I get?", a: "Labs Primary → 20% fixed + 5% performance-based (up to 25%) | Labs Secondary → 5% fixed + 2.5% performance-based (up to 7.5%) | Pro → 20% fixed (both partners) | Solo founder (Labs or Pro) → 40% flat" },
-      { q: "Do I own my product or does Entrext own it?", a: "Co-ownership. You get a board seat. Entrext holds studio equity, you hold founder equity." },
-      { q: "What happens if I leave?", a: "6-month cliff, 4–5 year vesting. You keep only what you've earned." },
-      { q: "Can I be diluted?", a: "Not the plan. Bootstrapped-first studio. Won't happen without your knowledge." }
+      { q: "What equity do I receive?", a: "Primary Partner → 20% fixed + 5% performance-based, up to 25% | Secondary Partner → 20% fixed + 5% performance-based, up to 25% | Solo Founder → 50% direct equity" },
+      { q: "Do I own the product?", a: "Yes — together. You hold founder equity, while Entrext holds studio equity. Founders also receive a board seat." },
+      { q: "What happens if I leave?", a: "A 6-month cliff applies, followed by 4–5 years of vesting. You retain only the equity you have earned." },
+      { q: "Can my equity be diluted?", a: "Yes, if necessary. We are a bootstrapped-first studio, but if future funding or strategic needs require dilution, it will be discussed transparently with all founders beforehand." }
     ]
   },
   {
     category: "Money & Resources",
     id: "CAP-02",
     questions: [
-      { q: "Do you fund the product?", a: "No one funds it upfront. You build from zero. Frugality is the philosophy." },
-      { q: "Who pays for tools, infra, marketing?", a: "Entrext covers all of it. Growth is organic-first: content and brand over paid ads." },
-      { q: "When do I see returns?", a: "Within a month if you're serious. Launch in under a week, first paying customers follow fast." },
-      { q: "Is there a joining cost?", a: "Only if part-time, and it's fully refunded once the product scales. Full-time founders pay nothing." }
+      { q: "Do you fund the product?", a: "Not upfront by default. You build from zero with a frugal, resource-first approach. If we see strong potential, Entrext may provide initial capital, or we can explore strategic fundraising together if needed to accelerate the product." },
+      { q: "Who pays for tools, infrastructure, and marketing?", a: "Entrext covers the core costs — tools, infrastructure, and marketing. We are organic-first, prioritising content, distribution, and brand over paid advertising." },
+      { q: "When can I expect returns?", a: "There is no fixed timeline. The goal is to launch within a week, validate quickly, and reach the first paying customers as early as possible." },
+      { q: "Is there a joining fee or investment required?", a: "No. Zero joining fee. Zero upfront investment." }
     ]
   },
   {
     category: "Selection & Entry",
     id: "SEL-03",
     questions: [
-      { q: "How do I apply?", a: "Form or referral from an existing Entrext founder. That's it." },
-      { q: "What founders do you accept?", a: "Serious, full-time. Experience doesn't matter. Having a Plan B means Plan A won't work." },
-      { q: "How competitive?", a: "One shot per person per year. 5 Labs teams + 5 Pro teams = 10 spots annually." },
-      { q: "Primary or Secondary: how do I choose?", a: "Primary = your idea, you lead, higher reward, higher accountability. Secondary = join proven momentum, lower risk, real stake." }
+      { q: "How do I apply?", a: "Through the application form or a referral from an existing Entrext founder. That's it." },
+      { q: "What kind of founders do you accept?", a: "Serious, committed builders. Full-time or part-time both work. Experience matters less than hard work, resilience, commitment, and relentlessness." },
+      { q: "How competitive is it?", a: "One shot per person, per year. We keep it intentionally limited to 5 Primary and 5 Secondary Partner slots." },
+      { q: "Primary or Secondary — how do I choose?", a: "Primary: Start from zero, lead the product, take higher ownership and higher accountability. Secondary: Join an already-validated product, take less initial risk, and build alongside an existing founder." }
     ]
   },
   {
     category: "Operations",
     id: "OPS-04",
     questions: [
-      { q: "Day-to-day?", a: "Meets every alternate day. Everything else is flexible." },
-      { q: "My idea or Entrext's?", a: "Labs → your idea. Pro → Entrext's validated idea." },
-      { q: "Time to launch?", a: "Under a week to ship. ~1 month to validate. Velocity over perfection." },
-      { q: "How many products running?", a: "Pro: 5/year. Labs: 15–20/year." }
+      { q: "What does day-to-day look like?", a: "We meet roughly twice a week, usually every alternate day when needed. Everything else stays flexible, with additional meetings only when the product requires them." },
+      { q: "Can I bring my own idea?", a: "Yes — but only as a Primary Partner. You can bring your own hypothesis, or choose and refine one from Entrext's idea bank." },
+      { q: "How quickly can we launch?", a: "Under a week. ~1 month to validate. We prioritise velocity, learning, and real users over perfection." },
+      { q: "How many products do you run?", a: "Around 5 products per year. We stay intentionally focused rather than building at scale for the sake of it." }
     ]
   }
 ];

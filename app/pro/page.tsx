@@ -31,7 +31,7 @@ const items: SitelinkItem[] = [
   },
   {
     label: "Who we accept",
-    description: "Serious, full-time. Experience optional. Plan B disqualifies.",
+    description: "Serious, committed builders. Full-time or part-time both work.",
     href: "#founders",
   },
   {
@@ -76,8 +76,8 @@ export default function ProPage() {
           </h2>
           <p className="text-base md:text-lg text-zinc-400 max-w-2xl leading-relaxed">
             Pro pairs a tech builder with a growth operator on a Entrext-validated idea. Both partners
-            commit full-time, both hold real equity, both ship together. We don&apos;t introduce. We match,
-            and only when the conviction is mutual.
+            hold real equity and ship together. We don&apos;t introduce. We match, and only when the
+            conviction is mutual.
           </p>
         </section>
 
@@ -113,12 +113,12 @@ export default function ProPage() {
 
         <section id="founders" className="scroll-mt-32 mt-24 border-t border-white/5 pt-16">
           <h2 className="mt-4 text-4xl md:text-6xl font-display italic text-white mb-6 tracking-tight">
-            No Plan B.
+            Committed, not credentialed.
           </h2>
           <p className="text-base md:text-lg text-zinc-400 max-w-2xl leading-relaxed">
-            Experience doesn&apos;t matter. Conviction does. Having a Plan B means Plan A won&apos;t work. That&apos;s
-            why we cap at 5 Pro teams a year. Apply once, give it everything, ship in under a week, find
-            paying customers in a month. The math works only if you&apos;re all in.
+            Serious, committed builders. Full-time or part-time both work — what matters is commitment.
+            Experience matters less than hard work, resilience, and relentlessness. That&apos;s why we cap
+            at 5 Pro teams a year: fewer, more committed builders, not a resume filter.
           </p>
         </section>
       </main>

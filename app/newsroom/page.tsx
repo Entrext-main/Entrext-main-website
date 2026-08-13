@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const items: SitelinkItem[] = [
   {
     label: "The bootstrapped studio playbook",
-    description: "How we run 15–20 Labs experiments without external capital, and why we keep it that way.",
+    description: "How we run about 5 focused products a year without external capital, and why we keep it that way.",
     disabled: true,
   },
   {

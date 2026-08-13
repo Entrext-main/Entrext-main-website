@@ -62,7 +62,7 @@ const PHASES: Phase[] = [
         label: "Secondary Partner — Tech / Build or Growth / Sales",
         tagline: "Support the opportunity. Execute with the team. Grow alongside it.",
         bullets: [
-          "5% fixed + 2.5% performance-based — up to 7.5%",
+          "20% fixed + 5% performance-based — up to 25%",
           "Join a primary partner and contribute to the opportunity",
           "Tech / Build: support product development and execution",
           "Growth / Sales: support customer acquisition, distribution, and validation",

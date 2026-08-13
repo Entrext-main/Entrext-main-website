@@ -31,12 +31,12 @@ const items: SitelinkItem[] = [
   },
   {
     label: "Equity at Labs",
-    description: "Primary: 20% fixed + 5% performance (up to 25%). Secondary: 5% fixed + 2.5% (up to 7.5%).",
+    description: "Primary & Secondary: 20% fixed + 5% performance (up to 25%). Solo founder: 50%.",
     href: "#equity",
   },
   {
     label: "Apply to Labs",
-    description: "Five Labs teams open per year. 15–20 active products at any time.",
+    description: "Five Labs teams open per year, part of about 5 products total.",
     href: "/apply#labs-primary",
   },
 ];
@@ -84,18 +84,18 @@ export default function LabsPage() {
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">01</span><span>Under a week to first ship.</span></li>
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">02</span><span>~1 month to validate or kill.</span></li>
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">03</span><span>Meets every alternate day. Everything else is flexible.</span></li>
-            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">04</span><span>15–20 active Labs products at any time.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">04</span><span>About 5 products a year, total. Focused, not scaled.</span></li>
           </ul>
         </section>
 
         <section id="graduation" className="scroll-mt-32 mt-24 border-t border-white/5 pt-16">
           <h2 className="mt-4 text-4xl md:text-6xl font-display italic text-white mb-6 tracking-tight">
-            Four things. Not three.
+            Prove demand.
           </h2>
           <p className="text-base md:text-lg text-zinc-400 max-w-2xl leading-relaxed mb-8">
-            To graduate from Labs into Pro, you need a common pattern across users, evidence of viable
-            scalability, basic competition analysis, and a minimum of 50 paying customers — all four,
-            not three. Clear it, and we match you with the Secondary Partner who completes the team.
+            To graduate from Labs into Pro, pass the validation checkpoint: 20–30+ paying customers,
+            clear user patterns, retention/referrals, scalability potential, and competitive
+            understanding. Clear it, and we match you with the Secondary Partner who completes the team.
           </p>
           <div className="inline-flex items-center gap-3 rounded-full border border-[#ff4d00]/30 bg-[#ff4d00]/5 px-6 py-3">
             <span className="font-mono text-[9px] text-zinc-500 uppercase tracking-widest">Graduation target</span>
@@ -111,9 +111,9 @@ export default function LabsPage() {
           </h2>
           <ul className="space-y-3 max-w-2xl text-zinc-300 leading-relaxed">
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">01</span><span>Primary Partner: 20% fixed + 5% performance-based (up to 25%). Your idea, you lead.</span></li>
-            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">02</span><span>Secondary Partner: 5% fixed + 2.5% performance-based (up to 7.5%). Join validated momentum.</span></li>
-            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">03</span><span>Solo founder (Labs or Pro): 40% flat.</span></li>
-            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">04</span><span>Entrext covers tools, infra, and growth distribution. Zero upfront cost for full-time founders.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">02</span><span>Secondary Partner: 20% fixed + 5% performance-based (up to 25%). Join validated momentum.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">03</span><span>Solo founder (Labs or Pro): 50% direct equity.</span></li>
+            <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">04</span><span>Entrext covers tools, infra, and growth distribution. Zero joining fee, zero upfront investment.</span></li>
           </ul>
         </section>
       </main>

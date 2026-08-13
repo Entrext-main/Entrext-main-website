@@ -20,64 +20,64 @@ const PATHS: Path[] = [
   {
     letter: "A",
     title: "Path A — Primary Partner",
-    subtitle: "You bring the hypothesis.",
+    subtitle: "You bring the hypothesis. We help you prove it.",
     steps: [
       {
         id: "01",
         title: "Bring Your Hypothesis",
-        desc: "You have observed a problem, felt a friction, or identified a gap. Tech or Growth — it does not matter. You come with a hypothesis and the drive to prove it.",
+        desc: "Bring a problem, friction, or opportunity you believe is worth solving. You can also pick from our Hypothesis Bank and refine it with us.",
       },
       {
         id: "02",
         title: "Build the MVP",
-        desc: "Use AI to build a lean, one-feature product. Get it in front of 100 to 1,000 real users. No bloat. No long roadmaps. Fast enough to learn from.",
+        desc: "We help you build a lean MVP and provide the tech infrastructure needed to test it with 100–1,000 real users.",
       },
       {
         id: "03",
-        title: "Hit the Validation Checkpoint",
-        desc: "Four things to pass: a common pattern across users, evidence of viable scalability, basic competition analysis, minimum 50 paying customers. All four. Not three.",
+        title: "Prove Demand",
+        desc: "Pass the validation checkpoint: 20–30+ paying customers, clear user patterns, retention/referrals, scalability potential, and competitive understanding.",
       },
       {
         id: "04",
-        title: "Get Your Secondary Partner",
-        desc: "Validation passed. We match you with an opposite founder who understands your product, trusts the direction, and brings the skill you do not have. Tech gets Growth. Growth gets Tech.",
+        title: "Meet Your Secondary Partner",
+        desc: "Once validated, we match you with an opposite founder — Tech × Growth — who complements your strengths and believes in the opportunity.",
       },
       {
         id: "05",
-        title: "Scale or Evolve Together",
-        desc: "One big product. A suite of tools. A full ecosystem. You decide. We stay in the room.",
+        title: "Scale Together",
+        desc: "Build, evolve, and scale the company together. We stay involved as you grow.",
       },
     ],
   },
   {
     letter: "B",
     title: "Path B — Secondary Partner",
-    subtitle: "You join what is already proven.",
+    subtitle: "You join what is already being proven.",
     steps: [
       {
         id: "01",
         title: "Apply With Your Skill",
-        desc: "You are a Tech or Growth founder looking to join a validated product rather than start from zero. You apply independently — no product needed.",
+        desc: "Apply as a Tech or Growth founder without needing your own product or idea.",
       },
       {
         id: "02",
         title: "Get Matched",
-        desc: "We identify a Primary Partner whose validated product fits your skill set, interests, and working style. The match is based on fit, not availability.",
+        desc: "We match you with a validated product based on your skills, interests, and working style.",
       },
       {
         id: "03",
-        title: "Come In With Context",
-        desc: "You join a product that already has paying users, a proven pattern, and a Primary Partner who knows it better than anyone. Your job is to scale what is already real.",
+        title: "Join With Context",
+        desc: "Enter a product with paying users, proven demand, and an existing Primary Partner.",
       },
       {
         id: "04",
         title: "Own Your Function",
-        desc: "Growth or Tech — you own your lane completely. Real equity, clear terms: 5% fixed + 2.5% performance-based, up to 7.5%.",
+        desc: "Own your Tech or Growth function with 20% fixed equity + 5% performance-based equity, up to 25%.",
       },
       {
         id: "05",
         title: "Build Together",
-        desc: "From here the path is the same. Scale. Evolve. Own what you build.",
+        desc: "Scale the product, evolve the company, and own what you build.",
       },
     ],
   },
@@ -91,7 +91,7 @@ export const PathToCompany = () => {
           <span className="font-mono text-[9px] md:text-[10px] text-black/70 uppercase tracking-[0.4em] md:tracking-[0.6em] mb-4 md:mb-6 block font-black">
             From Idea to Company
           </span>
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-sans font-black uppercase tracking-tighter text-black leading-[0.95]">
+          <h2 className="text-5xl md:text-7xl lg:text-8xl font-sans font-black uppercase tracking-tighter text-brand-orange leading-[0.95]">
             One Ecosystem.
             <br />
             Two Stages.
