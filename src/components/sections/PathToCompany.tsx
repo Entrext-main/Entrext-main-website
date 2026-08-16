@@ -85,13 +85,13 @@ const PATHS: Path[] = [
 
 export const PathToCompany = () => {
   return (
-    <section className="py-20 md:py-28 bg-[#F5C518] relative overflow-hidden">
+    <section className="py-20 md:py-28 bg-brand-orange relative overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="mb-16 md:mb-24">
           <span className="font-mono text-[9px] md:text-[10px] text-black/70 uppercase tracking-[0.4em] md:tracking-[0.6em] mb-4 md:mb-6 block font-black">
             From Idea to Company
           </span>
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-sans font-black uppercase tracking-tighter text-brand-orange leading-[0.95]">
+          <h2 className="text-5xl md:text-7xl lg:text-8xl font-sans font-black uppercase tracking-tighter text-black leading-[0.95]">
             One Ecosystem.
             <br />
             Two Stages.
@@ -102,7 +102,7 @@ export const PathToCompany = () => {
           {PATHS.map((path, pathIndex) => (
             <div key={path.letter}>
               <div className="flex items-center gap-4 mb-10 md:mb-14">
-                <div className="w-14 h-14 md:w-16 md:h-16 shrink-0 bg-black text-[#F5C518] flex items-center justify-center font-sans font-black text-2xl md:text-3xl">
+                <div className="w-14 h-14 md:w-16 md:h-16 shrink-0 bg-black text-white flex items-center justify-center font-sans font-black text-2xl md:text-3xl">
                   {path.letter}
                 </div>
                 <div>

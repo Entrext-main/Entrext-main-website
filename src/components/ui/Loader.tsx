@@ -9,9 +9,9 @@ import Image from "next/image";
 // Sequence (first thing every visitor sees):
 //   1. Full-screen brand-orange canvas.
 //   2. White hairline draws across the centre. As it passes 33 / 66 % of
-//      its run, the Labs / Pro logo pops in *on* the line — like the
-//      line is dropping them off. A booting counter in the bottom-right
-//      ticks 000 → 100 in sync with the line.
+//      its run, "Entrepreneur's" / "Next" pop in *on* the line — spelling
+//      out the name — like the line is dropping them off. A booting
+//      counter in the bottom-right ticks 000 → 100 in sync with the line.
 //   3. Brief hold so the pair reads.
 //   4. Five vertical brand-orange panels slide up off-screen, revealing the
 //      site underneath.
@@ -20,8 +20,8 @@ import Image from "next/image";
 // between phase 1 and phase 2 is visually seamless.
 
 const SLOTS = [
-  { src: "/logos/labs.webp", alt: "Entrext Labs", label: "Labs", position: 33 },
-  { src: "/logos/pro.webp",  alt: "Entrext Pro",  label: "Pro",  position: 66 },
+  { word: "Entrepreneur's", position: 33 },
+  { word: "Next", position: 66 },
 ];
 
 const LINE_DURATION_S = 2.4;
@@ -133,34 +133,25 @@ export const Loader = () => {
               }}
             />
 
-            {/* Logos sitting on the line */}
+            {/* Words sitting on the line — spell out "Entrepreneur's Next" */}
             {SLOTS.map((slot, i) => (
               <motion.div
-                key={slot.alt}
+                key={slot.word}
                 className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2"
                 style={{ left: `${slot.position}%` }}
-                initial={{ opacity: 0, scale: 0.6, rotate: 14 }}
+                initial={{ opacity: 0, scale: 0.6, y: 10 }}
                 animate={
                   revealed >= i
-                    ? { opacity: 1, scale: 1, rotate: 0 }
-                    : { opacity: 0, scale: 0.6, rotate: 14 }
+                    ? { opacity: 1, scale: 1, y: 0 }
+                    : { opacity: 0, scale: 0.6, y: 10 }
                 }
                 transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
               >
-                <div className="size-14 sm:size-20 md:size-24 lg:size-28 rounded-full bg-white shadow-[0_20px_60px_rgba(0,0,0,0.18)] flex items-center justify-center">
-                  <Image
-                    src={slot.src}
-                    alt=""
-                    width={120}
-                    height={120}
-                    draggable={false}
-                    className="w-9 sm:w-12 md:w-16 lg:w-20 aspect-square object-contain"
-                    priority
-                  />
+                <div className="px-5 py-3 sm:px-7 sm:py-4 rounded-2xl bg-white shadow-[0_20px_60px_rgba(0,0,0,0.18)] flex items-center justify-center">
+                  <span className="font-sans font-black uppercase italic text-brand-orange text-sm sm:text-lg md:text-xl tracking-tight whitespace-nowrap">
+                    {slot.word}
+                  </span>
                 </div>
-                <span className="absolute top-full left-1/2 -translate-x-1/2 mt-3 md:mt-4 font-mono text-[9px] md:text-[10px] text-white uppercase tracking-[0.4em] font-black whitespace-nowrap">
-                  {slot.label}
-                </span>
               </motion.div>
             ))}
           </div>

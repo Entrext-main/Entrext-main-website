@@ -133,7 +133,7 @@ export const PRODUCTS = [
     signal: "The easiest way to collect, manage, and prioritize customer feedback — built for product teams who care about their users' voice.",
     color: "text-[#ff4d00]",
     glow: "shadow-[#ff4d00]/20",
-    href: "https://monkfeed.entrext.com/",
+    href: "https://monkfeed.com/",
     preview: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
   },
   {
@@ -150,7 +150,7 @@ export const PRODUCTS = [
     signal: "A hyper-local networking platform for women entrepreneurs to discover, connect, learn, and collaborate with each other.",
     color: "text-pink-400",
     glow: "shadow-pink-500/20",
-    href: "https://herth.entrext.in/",
+    href: "https://herth.in/",
     preview: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop"
   },
   {
@@ -166,7 +166,8 @@ export const PRODUCTS = [
     ],
     signal: "A gaming studio to create and discover amazing, unconventional games — all in one place.",
     color: "text-indigo-400",
-    glow: "shadow-indigo-500/20"
+    glow: "shadow-indigo-500/20",
+    href: "https://singularity-y.com/"
   },
   {
     id: "04",
@@ -181,7 +182,8 @@ export const PRODUCTS = [
     ],
     signal: "Instantly share secure, interactive review links to collect visual feedback, annotations, and QA bug reports directly on live web pages. The fastest way to sign off website changes.",
     color: "text-amber-400",
-    glow: "shadow-amber-500/20"
+    glow: "shadow-amber-500/20",
+    href: "https://stage.entrext.com/"
   },
   {
     id: "05",
@@ -196,7 +198,8 @@ export const PRODUCTS = [
     ],
     signal: "Free anonymous chat platform.",
     color: "text-rose-400",
-    glow: "shadow-rose-500/20"
+    glow: "shadow-rose-500/20",
+    href: "https://secretroom.entrext.in/"
   },
   {
     id: "06",
@@ -211,7 +214,8 @@ export const PRODUCTS = [
     ],
     signal: "Optimizing the hiring space by building something needful. Still in its early stage.",
     color: "text-teal-400",
-    glow: "shadow-teal-500/20"
+    glow: "shadow-teal-500/20",
+    href: "https://sohospace.entrext.com/"
   }
 ];
 
