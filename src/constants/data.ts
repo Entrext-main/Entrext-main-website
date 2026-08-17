@@ -215,7 +215,7 @@ export const PRODUCTS = [
     signal: "Optimizing the hiring space by building something needful. Still in its early stage.",
     color: "text-teal-400",
     glow: "shadow-teal-500/20",
-    href: "https://sohospace.entrext.com/"
+    href: "https://sohospace.entrext.in/"
   }
 ];
 
