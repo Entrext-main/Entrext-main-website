@@ -3,6 +3,8 @@ import { Navbar } from "@/src/components/layout/Navbar";
 import { Footer } from "@/src/components/layout/Footer";
 import { GlowBackground } from "@/src/components/layout/GlowBackground";
 import { SitelinksList, SitelinkItem } from "@/src/components/ui/SitelinksList";
+import { FAQItem } from "@/src/components/ui/FAQItem";
+import { MATCH_FAQ } from "@/src/constants/data";
 
 export const metadata: Metadata = {
   title: "Match",
@@ -22,6 +24,11 @@ const items: SitelinkItem[] = [
     label: "Why it takes time",
     description: "About 6 months, because the goal is fit, not filling a seat.",
     href: "#why-it-takes-time",
+  },
+  {
+    label: "Match FAQ",
+    description: "Ownership, the 30-day alignment period, and what we're actually matching on.",
+    href: "#faq",
   },
   {
     label: "Join Match by Entrext",
@@ -68,6 +75,17 @@ export default function MatchPage() {
             We usually allow around 6 months to find and build the right founder fit — because the goal
             isn&apos;t to fill a position quickly. It&apos;s to find the right person to build with.
           </p>
+        </section>
+
+        <section id="faq" className="scroll-mt-32 mt-24 border-t border-white/5 pt-16">
+          <h2 className="mt-4 text-4xl md:text-6xl font-display italic text-white mb-10 tracking-tight">
+            Match FAQ.
+          </h2>
+          <div>
+            {MATCH_FAQ.map((faq, idx) => (
+              <FAQItem key={idx} question={faq.q} answer={faq.a} />
+            ))}
+          </div>
         </section>
 
         <p className="mt-32 max-w-2xl text-sm text-zinc-500 italic border-t border-white/5 pt-12">

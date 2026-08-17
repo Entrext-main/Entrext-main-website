@@ -261,3 +261,53 @@ export const FAQ_DATA = [
     ]
   }
 ];
+
+// Shared by /labs and /pro — same underlying Selection & Entry + Operations
+// questions from FAQ_DATA, surfaced locally so founders don't have to leave
+// the page they're reading to find them.
+export const PARTNER_FAQ = FAQ_DATA
+  .filter((cat) => cat.id === "SEL-03" || cat.id === "OPS-04")
+  .flatMap((cat) => cat.questions);
+
+export const MATCH_FAQ = [
+  {
+    q: "What if the match doesn't work?",
+    a: "A match isn't a permanent commitment. We have a 30-day alignment period where both founders work together and understand each other's working style, communication, strengths, expectations, and conviction. This period allows both sides to evaluate the partnership. If it doesn't work, that's okay. We learn from it and can look for a better fit."
+  },
+  {
+    q: "What happens if the match works?",
+    a: "If both founders feel the partnership is right, you move forward together. Roles and responsibilities are defined around each person's strengths, with the goal of building one complementary founding team."
+  },
+  {
+    q: "How does ownership work?",
+    a: "Our ideal structure is equal ownership between the founding partners — Primary: 20% fixed + 5% performance, Secondary: 20% fixed + 5% performance. The exact structure can be discussed depending on the opportunity, timing, and contribution. We believe the percentage difference matters far less than having the right person building the company with you for the long term."
+  },
+  {
+    q: "Do I need a product to get matched?",
+    a: "No. You can register before an opportunity exists. We look at your skills, interests, behaviour, working style, ambition, and areas of conviction to identify people who could complement you. The opportunity can emerge after the right founders come together."
+  },
+  {
+    q: "Can I join an existing product?",
+    a: "Usually, no. Match is a separate initiative focused on finding the right founder-to-founder fit, rather than placing people into existing Labs products. The main exception is when a Secondary Partner match in Labs doesn't work out with the Primary Partner — in that case, Match may be used to find a better fit for that existing opportunity. Otherwise, the person comes first and the opportunity can come next."
+  },
+  {
+    q: "Can I bring my own co-founder?",
+    a: "Yes. You don't have to use the matching system if you already know who you want to build with. Entrext can still facilitate the alignment period and help both founders understand the opportunity, roles, and terms."
+  },
+  {
+    q: "What if we disagree after matching?",
+    a: "That's exactly what the 30-day alignment period is for. You aren't expected to agree on everything. You're expected to discover whether you can disagree, solve problems, communicate, and build together."
+  },
+  {
+    q: "What if we need a third founder?",
+    a: "The default is to build with the two-person founding team. A third founder is considered only when the company genuinely needs another critical skill set. If that happens, ownership and terms are discussed based on the person's role, contribution, timing, and the company's needs."
+  },
+  {
+    q: "Is the match guaranteed to work?",
+    a: "No. The matching system helps identify potential fit. It doesn't replace actually working together. That's why we have the 30-day alignment period. We find the potential fit. You prove the partnership."
+  },
+  {
+    q: "What are we actually matching on?",
+    a: "Not just skills. We look across skill set, interests, working style, behaviour, ambition, availability, conviction, communication, and complementarity. The goal isn't to find someone identical to you. It's to find someone who completes you."
+  }
+];

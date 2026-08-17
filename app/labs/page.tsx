@@ -4,6 +4,8 @@ import { Navbar } from "@/src/components/layout/Navbar";
 import { Footer } from "@/src/components/layout/Footer";
 import { GlowBackground } from "@/src/components/layout/GlowBackground";
 import { SitelinksList, SitelinkItem } from "@/src/components/ui/SitelinksList";
+import { FAQItem } from "@/src/components/ui/FAQItem";
+import { PARTNER_FAQ } from "@/src/constants/data";
 
 export const metadata: Metadata = {
   title: "Entrext-Labs",
@@ -38,6 +40,11 @@ const items: SitelinkItem[] = [
     label: "Apply to Labs",
     description: "Five Labs teams open per year, part of about 5 products total.",
     href: "/apply#labs-primary",
+  },
+  {
+    label: "Labs FAQ",
+    description: "Applying, selection, day-to-day, and how many products we run.",
+    href: "#faq",
   },
 ];
 
@@ -115,6 +122,17 @@ export default function LabsPage() {
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">03</span><span>Solo founder (Labs or Pro): 50% direct equity.</span></li>
             <li className="flex gap-4"><span className="font-mono text-[10px] text-[#ff4d00]/60 pt-1.5">04</span><span>Entrext covers tools, infra, and growth distribution. Zero joining fee, zero upfront investment.</span></li>
           </ul>
+        </section>
+
+        <section id="faq" className="scroll-mt-32 mt-24 border-t border-white/5 pt-16">
+          <h2 className="mt-4 text-4xl md:text-6xl font-display italic text-white mb-10 tracking-tight">
+            Labs FAQ.
+          </h2>
+          <div>
+            {PARTNER_FAQ.map((faq, idx) => (
+              <FAQItem key={idx} question={faq.q} answer={faq.a} />
+            ))}
+          </div>
         </section>
       </main>
       <Footer />
