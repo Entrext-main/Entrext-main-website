@@ -45,7 +45,7 @@ export const EcosystemTriangle = () => {
         {[
           { label: "PRO", deg: 0, desc: "Validated" },
           { label: "LABS", deg: 120, desc: "Velocity" },
-          { label: "EDGE", deg: 240, desc: "Gaming" }
+          { label: "MATCH", deg: 240, desc: "Alignment" }
         ].map((node, i) => (
           <motion.div
             key={i}
