@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { EcosystemTriangle } from '../ui/EcosystemTriangle';
 import Link from 'next/link';
+import { ArrowFillButton } from '../ui/ArrowFillButton';
 
 export const Hero = () => {
   return (
@@ -32,6 +33,15 @@ export const Hero = () => {
             Founder Ecosystem
           </span>
         </motion.h1>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="-mt-6 md:-mt-10 mb-12 md:mb-16 flex justify-center"
+        >
+          <ArrowFillButton href="/mission">Our Mission</ArrowFillButton>
+        </motion.div>
       </div>
 
       <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
@@ -61,9 +71,6 @@ export const Hero = () => {
           >
             <Link href="/apply" className="w-full sm:w-auto bg-[#ff4d00] text-white px-8 md:px-12 py-4 md:py-5 rounded-md font-black text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] shadow-[0_20px_50px_rgba(255,77,0,0.2)] hover:shadow-[0_25px_60px_rgba(255,77,0,0.3)] transition-all hover:-translate-y-1 text-center">
               Apply as Founding Partner
-            </Link>
-            <Link href="/advertise" className="w-full sm:w-auto border border-white/10 hover:border-white/30 backdrop-blur-md px-8 md:px-12 py-4 md:py-5 rounded-md font-black text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] transition-all text-center">
-              Advertise
             </Link>
           </motion.div>
         </div>

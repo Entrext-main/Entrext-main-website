@@ -15,7 +15,7 @@ const divisionLinks = [
 const secondaryLinks = [
   { name: "Products",  href: "/products" },
   { name: "Match",     href: "/match" },
-  { name: "Newsroom",  href: "/newsroom" },
+  { name: "Mission",   href: "/mission" },
   { name: "Brain",     href: "/brain" },
   { name: "Advertise", href: "/advertise" },
 ];

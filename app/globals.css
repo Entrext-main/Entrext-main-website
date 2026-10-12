@@ -86,3 +86,16 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-brand-orange);
 }
+
+/* Mission page (ported journey): cloud drift + scroll snapping scoped to that page */
+@keyframes cloudDrift1 {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(60px); }
+}
+.animate-cloud-1 {
+  animation: cloudDrift1 36s ease-in-out infinite;
+}
+html:has(.mission-page) {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}

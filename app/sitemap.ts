@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/labs', priority: 0.8 },
     { url: '/pro', priority: 0.8 },
     { url: '/match', priority: 0.8 },
+    { url: '/mission', priority: 0.8 },
     { url: '/newsroom', priority: 0.8 },
     { url: '/apply', priority: 0.8 },
     { url: '/brain', priority: 0.6 },
