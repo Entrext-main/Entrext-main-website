@@ -3,75 +3,83 @@
 import React from 'react';
 import { motion } from 'motion/react';
 
+// Operator + Builder pair up to form "Your Company" (the glowing X).
+const NODES = [
+  { label: "OPERATOR", x: 22, y: 26 },
+  { label: "BUILDER", x: 78, y: 18 },
+];
+const COMPANY = { x: 50, y: 78 };
+
+// Whole diagram turns slowly; every label counter-rotates so text stays upright.
+const SPIN = { duration: 40, repeat: Infinity, ease: "linear" as const };
+
 export const EcosystemTriangle = () => {
   return (
     <div className="relative w-full aspect-square max-w-[500px] flex items-center justify-center">
       <div className="absolute inset-0 bg-[#ff4d00]/5 blur-[120px] rounded-full animate-pulse" />
-      
-      <motion.div
-        animate={{ 
-          rotate: 360,
-          scale: [1, 1.05, 1, 0.95, 1],
-        }}
-        transition={{ 
-          rotate: { duration: 40, repeat: Infinity, ease: "linear" },
-          scale: { duration: 8, repeat: Infinity, ease: "easeInOut" }
-        }}
-        className="relative w-full h-full flex items-center justify-center"
-      >
-        <svg viewBox="0 0 400 400" className="w-[90%] h-[90%] drop-shadow-[0_0_30px_rgba(255,77,0,0.2)]">
-          <defs>
-            <linearGradient id="triGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#ff4d00" stopOpacity="1" />
-              <stop offset="100%" stopColor="#ff4d00" stopOpacity="0.2" />
-            </linearGradient>
-          </defs>
-          <motion.path 
-            d="M200 50 L350 320 L50 320 Z" 
-            fill="none" 
-            stroke="url(#triGradient)" 
-            strokeWidth="1"
-            className="opacity-40"
-          />
-          <motion.path 
-            d="M200 80 L320 300 L80 300 Z" 
-            fill="none" 
-            stroke="url(#triGradient)" 
-            strokeWidth="0.5"
-            className="opacity-20"
-          />
-        </svg>
 
-        {[
-          { label: "PRO", deg: 0, desc: "Validated" },
-          { label: "LABS", deg: 120, desc: "Velocity" },
-          { label: "MATCH", deg: 240, desc: "Alignment" }
-        ].map((node, i) => (
+      <motion.div
+        animate={{ rotate: 360 }}
+        transition={SPIN}
+        className="absolute inset-0"
+      >
+      <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full" aria-hidden>
+        <defs>
+          <linearGradient id="linkGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#ff4d00" stopOpacity="0.6" />
+            <stop offset="100%" stopColor="#ff4d00" stopOpacity="0.15" />
+          </linearGradient>
+        </defs>
+        {/* Operator ↔ Builder */}
+        <line x1={NODES[0].x} y1={NODES[0].y} x2={NODES[1].x} y2={NODES[1].y} stroke="#ff4d00" strokeOpacity="0.35" strokeWidth="0.25" />
+        <line x1={NODES[0].x} y1={NODES[0].y + 1.5} x2={NODES[1].x} y2={NODES[1].y + 1.5} stroke="#ff4d00" strokeOpacity="0.15" strokeWidth="0.25" />
+        {/* Both → Company */}
+        {NODES.map((n) => (
+          <React.Fragment key={n.label}>
+            <line x1={n.x} y1={n.y} x2={COMPANY.x} y2={COMPANY.y} stroke="url(#linkGradient)" strokeWidth="0.3" />
+            <line x1={n.x + 1.5} y1={n.y} x2={COMPANY.x + 1.5} y2={COMPANY.y} stroke="url(#linkGradient)" strokeOpacity="0.5" strokeWidth="0.3" />
+          </React.Fragment>
+        ))}
+      </svg>
+
+      {NODES.map((n, i) => (
+        <div
+          key={n.label}
+          className="absolute"
+          style={{ left: `${n.x}%`, top: `${n.y}%` }}
+        >
           <motion.div
-            key={i}
-            className="absolute"
-            style={{
-              transform: `rotate(${node.deg}deg) translateY(-160px)`,
-            }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.3 + i * 0.15, duration: 0.6 }}
+            className="absolute -translate-x-1/2 -translate-y-1/2"
           >
-            <motion.div 
+            <motion.div
               animate={{ rotate: -360 }}
-              transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-              className="flex flex-col items-center group"
+              transition={SPIN}
+              className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-black border border-[#ff4d00]/60 flex items-center justify-center text-[8px] md:text-[10px] font-black tracking-wide text-[#ff4d00]"
             >
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-black border border-[#ff4d00]/40 rounded-full flex items-center justify-center text-[7px] md:text-[8px] font-black text-[#ff4d00] shadow-[0_0_20px_rgba(255,77,0,0.3)] group-hover:scale-125 transition-transform">
-                {node.label}
-              </div>
-              <div className="mt-4 px-3 py-1 bg-white/5 backdrop-blur-md rounded border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-[6px] md:text-[7px] font-mono uppercase tracking-widest text-zinc-400">{node.desc}</span>
-              </div>
+              {n.label}
             </motion.div>
           </motion.div>
-        ))}
-
-        <div className="absolute w-12 h-12 md:w-16 md:h-16 bg-[#ff4d00] rounded-full flex items-center justify-center text-black font-black text-lg md:text-xl shadow-[0_0_50px_#ff4d00]">
-          X
         </div>
+      ))}
+
+      {/* Zero-size anchor at the X: counter-rotating around it keeps the label directly below */}
+      <div className="absolute" style={{ left: `${COMPANY.x}%`, top: `${COMPANY.y}%` }}>
+        <motion.div animate={{ rotate: -360 }} transition={SPIN} className="absolute left-0 top-0">
+          <motion.div
+            animate={{ scale: [1, 1.06, 1] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute -translate-x-1/2 -translate-y-1/2 w-20 h-20 md:w-24 md:h-24 bg-[#ff4d00] rounded-full flex items-center justify-center text-black font-black text-3xl md:text-4xl shadow-[0_0_70px_rgba(255,77,0,0.6)]"
+          >
+            X
+          </motion.div>
+          <span className="absolute left-1/2 -translate-x-1/2 top-12 md:top-14 mt-4 whitespace-nowrap text-[9px] md:text-[10px] font-mono uppercase tracking-[0.4em] text-zinc-500">
+            Your Company
+          </span>
+        </motion.div>
+      </div>
       </motion.div>
     </div>
   );

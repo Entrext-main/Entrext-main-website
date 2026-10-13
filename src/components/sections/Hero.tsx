@@ -24,13 +24,16 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="mx-auto max-w-[22ch] text-balance text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[96px] font-sans font-black leading-[0.95] tracking-[-0.02em] uppercase mb-14 md:mb-20"
+          className="mx-auto max-w-[16ch] text-balance text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[96px] font-sans font-black leading-[0.95] tracking-[-0.02em] uppercase mb-14 md:mb-20"
         >
-          Building the World's{" "}
-          <span className="font-display italic font-normal normal-case tracking-[-0.01em] text-white">First</span>{" "}
-          Technology-Owned{" "}
-          <span className="orange-gradient-text font-display italic font-normal normal-case tracking-[-0.01em]">
-            Founder Ecosystem
+          You&apos;ve lived the{" "}
+          <span className="orange-gradient-text font-display italic font-normal normal-case tracking-[-0.01em] pr-[0.1em]">
+            Problem.
+          </span>
+          <br />
+          Now build the{" "}
+          <span className="font-display italic font-normal normal-case tracking-[-0.01em] text-[#ff4d00]">
+            Company.
           </span>
         </motion.h1>
 
@@ -45,7 +48,7 @@ export const Hero = () => {
       </div>
 
       <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-1">
+        <div className="flex flex-col items-start text-left order-2 lg:order-1">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -53,13 +56,13 @@ export const Hero = () => {
             className="max-w-xl text-zinc-500"
           >
             <h2 className="text-xl md:text-3xl font-bold text-white mb-6 uppercase tracking-tight leading-tight">
-              The venture studio where founders validate products, find co-founders, and build companies together.
+              The venture studio where industry operators and tech builders pair up, validate products, and co-own the companies they build.
             </h2>
             <p className="text-sm md:text-lg leading-relaxed uppercase tracking-tight font-bold opacity-80 mb-6 md:mb-8">
-              We pair tech builders and growth operators to launch, validate, and scale niche digital products. This is not a place to get hired. It is a place to build, own, and compound products over time.
+              Nobody gets hired here. Operators who know the problem and builders who can solve it launch, validate, and scale niche digital products together.
             </p>
             <p className="font-display italic text-xl md:text-2xl text-white leading-snug tracking-tight border-l-2 border-[#ff4d00] pl-4 md:pl-5 mb-10 md:mb-12">
-              Not a job. You co-build and build startups here.
+              Walk in with experience. Walk out with equity.
             </p>
           </motion.div>
 
@@ -69,8 +72,11 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 md:gap-6 w-full lg:justify-start"
           >
-            <Link href="/apply" className="w-full sm:w-auto bg-[#ff4d00] text-white px-8 md:px-12 py-4 md:py-5 rounded-md font-black text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] shadow-[0_20px_50px_rgba(255,77,0,0.2)] hover:shadow-[0_25px_60px_rgba(255,77,0,0.3)] transition-all hover:-translate-y-1 text-center">
-              Apply as Founding Partner
+            <Link href="/apply" className="w-full sm:w-auto bg-[#ff4d00] text-white px-8 md:px-10 py-4 rounded-full font-extrabold text-sm md:text-base shadow-[0_20px_50px_rgba(255,77,0,0.2)] hover:shadow-[0_25px_60px_rgba(255,77,0,0.3)] transition-all hover:-translate-y-1 text-center">
+              Apply as an Operator
+            </Link>
+            <Link href="/apply" className="w-full sm:w-auto border border-[#ff4d00] hover:bg-[#ff4d00]/10 px-8 md:px-10 py-4 rounded-full font-extrabold text-sm md:text-base text-white transition-all text-center">
+              Apply as a Builder
             </Link>
           </motion.div>
         </div>
