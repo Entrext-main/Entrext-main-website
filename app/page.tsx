@@ -18,6 +18,10 @@ import { InHouseTechnologies } from "@/src/components/sections/InHouseTechnologi
 import { WhoThisIsFor } from "@/src/components/sections/WhoThisIsFor";
 import { CoreOSInfographic } from "@/src/components/sections/CoreOSInfographic";
 import { PathToCompany } from "@/src/components/sections/PathToCompany";
+import dynamic from "next/dynamic";
+
+// Below-the-fold and image-heavy: split into its own chunk so it never blocks first paint.
+const WallOfLove = dynamic(() => import("@/src/components/sections/WallOfLove").then((m) => m.WallOfLove));
 import { CTA } from "@/src/components/sections/CTA";
 import { FAQSection } from "@/src/components/sections/FAQSection";
 
@@ -59,6 +63,9 @@ export default function Home() {
 
         {/* Primary vs Secondary Partner Journey */}
         <PathToCompany />
+
+        {/* Community posts / testimonials */}
+        <WallOfLove />
 
         {/* Final Conversion */}
         <CTA />
