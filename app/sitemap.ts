@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/pro', priority: 0.8 },
     { url: '/match', priority: 0.8 },
     { url: '/mission', priority: 0.8 },
-    { url: '/wall-of-love', priority: 0.6 },
+    { url: '/wall-of-content', priority: 0.6 },
     { url: '/newsroom', priority: 0.8 },
     { url: '/apply', priority: 0.8 },
     { url: '/brain', priority: 0.6 },

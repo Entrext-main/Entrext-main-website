@@ -33,12 +33,12 @@ const SourceIcon = ({ source }: { source: WallSource }) => {
   return <MessageCircle className="size-3" strokeWidth={2} aria-hidden="true" />;
 };
 
-interface WallOfLoveProps {
-  /** Render every post (the /wall-of-love page). Otherwise a preview with a link to that page. */
+interface WallOfContentProps {
+  /** Render every post (the /wall-of-content page). Otherwise a preview with a link to that page. */
   full?: boolean;
 }
 
-export const WallOfLove = ({ full = false }: WallOfLoveProps) => {
+export const WallOfContent = ({ full = false }: WallOfContentProps) => {
   const reduceMotion = useReducedMotion();
   // Preview mode only mounts the first batch, so the rest never download from the home page.
   const items = full ? WALL_ITEMS : WALL_ITEMS.slice(0, INITIAL_COUNT);
@@ -54,7 +54,7 @@ export const WallOfLove = ({ full = false }: WallOfLoveProps) => {
         transition={{ duration: 0.6 }}
         className="text-center"
       >
-        <Heading id="wall-heading" className="font-display text-[34px] leading-[1.08] md:text-[48px]">Wall of Love</Heading>
+        <Heading id="wall-heading" className="font-display text-[34px] leading-[1.08] md:text-[48px]">Wall of Content</Heading>
         <p className="mx-auto mt-5 max-w-xl text-[17px] leading-relaxed text-zinc-400 md:text-[18px]">
           Real posts and messages from founders, builders and operators in the Entrext community.
         </p>
@@ -71,7 +71,8 @@ export const WallOfLove = ({ full = false }: WallOfLoveProps) => {
           {WALL_STATS.map((stat) => (
             <div key={stat.label} className="px-3 py-6 text-center md:py-8">
               <div className="font-display text-[28px] leading-none tracking-[-0.04em] md:text-[44px]">{stat.value}</div>
-              <div className="mt-2 text-balance text-[12.5px] text-zinc-400 md:text-[13.5px]">{stat.label}</div>
+              <div className="mt-2 text-[13px] font-semibold text-white md:text-[15px]">{stat.label}</div>
+              <div className="mt-1 text-balance text-[12px] text-zinc-400 md:text-[13.5px]">{stat.description}</div>
             </div>
           ))}
         </div>
@@ -130,7 +131,7 @@ export const WallOfLove = ({ full = false }: WallOfLoveProps) => {
       {!full && (
         <div className="relative mt-2 flex justify-center">
           <Link
-            href="/wall-of-love"
+            href="/wall-of-content"
             className="rounded-full border border-white/15 px-8 py-3 text-[11px] font-black uppercase tracking-[0.3em] text-white transition-colors hover:border-[#ff4d00] hover:text-[#ff4d00] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff4d00] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           >
             Show all {WALL_ITEMS.length} posts

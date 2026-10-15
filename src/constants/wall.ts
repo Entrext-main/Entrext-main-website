@@ -11,9 +11,9 @@ export interface WallItem {
 }
 
 export const WALL_STATS = [
-  { value: "4,600+", label: "LinkedIn followers" },
-  { value: "10+", label: "paid customers on a single portfolio product" },
-  { value: "4.4K", label: "views on one community post" },
+  { value: "25,000+", label: "Total followers", description: "Across founders & ecosystem" },
+  { value: "100,000+", label: "Combined impressions", description: "Total impressions across community posts" },
+  { value: "10+", label: "Active founders", description: "Builders launching & building in public" },
 ];
 
 // Screenshots live in /public/wall. Order here is the masonry reading order.

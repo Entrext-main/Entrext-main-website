@@ -21,7 +21,7 @@ import { PathToCompany } from "@/src/components/sections/PathToCompany";
 import dynamic from "next/dynamic";
 
 // Below-the-fold and image-heavy: split into its own chunk so it never blocks first paint.
-const WallOfLove = dynamic(() => import("@/src/components/sections/WallOfLove").then((m) => m.WallOfLove));
+const WallOfContent = dynamic(() => import("@/src/components/sections/WallOfContent").then((m) => m.WallOfContent));
 import { CTA } from "@/src/components/sections/CTA";
 import { FAQSection } from "@/src/components/sections/FAQSection";
 
@@ -65,7 +65,7 @@ export default function Home() {
         <PathToCompany />
 
         {/* Community posts / testimonials */}
-        <WallOfLove />
+        <WallOfContent />
 
         {/* Final Conversion */}
         <CTA />
