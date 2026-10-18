@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Lenis from 'lenis';
 import { motion, useScroll, useSpring } from 'motion/react';
 import { Hero } from '@/src/components/solo/Hero';
-import { WallOfContentSection } from '@/src/components/solo/WallOfContentSection';
+import { WallOfContent } from '@/src/components/sections/WallOfContent';
 import { DistributionStrategySection } from '@/src/components/solo/DistributionStrategySection';
 import { WhatYouGetSection } from '@/src/components/solo/WhatYouGetSection';
 import { ScopeAndOwnershipSection } from '@/src/components/solo/ScopeAndOwnershipSection';
@@ -78,7 +78,7 @@ export default function SoloFoundersPage() {
       {/* 3. Main Flow for Solo Non-Tech Founders Program */}
       <main className="flex-1 relative z-10">
         <Hero onOpenApply={handleOpenApply} />
-        <WallOfContentSection />
+        <WallOfContent />
         <DistributionStrategySection onOpenApply={handleOpenApply} />
         <WhatYouGetSection />
         <ScopeAndOwnershipSection />
