@@ -99,3 +99,27 @@ html:has(.mission-page) {
   scroll-behavior: smooth;
   scroll-snap-type: y proximity;
 }
+
+/* Solo founders page: its own type stack + Lenis smooth-scroll rules */
+.solo-page {
+  --font-sans: 'Satoshi', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: 'Satoshi', -apple-system, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  font-family: var(--font-sans);
+}
+.solo-page ::selection {
+  background-color: #ffffff;
+  color: #000000;
+}
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}

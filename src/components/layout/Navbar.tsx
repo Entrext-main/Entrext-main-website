@@ -17,6 +17,7 @@ const secondaryLinks = [
   { name: "Match",     href: "/match" },
   { name: "Mission",   href: "/mission" },
   { name: "Brain",     href: "/brain" },
+  { name: "Solo Founders", href: "/solo-founders" },
   { name: "Advertise", href: "/advertise" },
 ];
 
