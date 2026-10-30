@@ -3,20 +3,21 @@
 import React from 'react';
 import { motion } from 'motion/react';
 
-// Operator + Builder pair up to form "Your Company" (the glowing X).
+// Operator + Builder pair up to form "Your Company" (the glowing X). The three points form an
+// equilateral triangle centred on (50, 50), so the diagram turns about its own middle.
 const NODES = [
-  { label: "OPERATOR", x: 22, y: 26 },
-  { label: "BUILDER", x: 78, y: 18 },
+  { label: "OPERATOR", x: 65, y: 24 },
+  { label: "BUILDER", x: 65, y: 76 },
 ];
-const COMPANY = { x: 50, y: 78 };
+const COMPANY = { x: 20, y: 50 };
 
 // Whole diagram turns slowly; every label counter-rotates so text stays upright.
 const SPIN = { duration: 40, repeat: Infinity, ease: "linear" as const };
 
 export const EcosystemTriangle = () => {
   return (
-    <div className="relative w-full aspect-square max-w-[500px] flex items-center justify-center">
-      <div className="absolute inset-0 bg-[#ff4d00]/5 blur-[120px] rounded-full animate-pulse" />
+    <div className="relative w-full aspect-square max-w-90 sm:max-w-125 lg:max-w-160 flex items-center justify-center">
+      <div className="absolute inset-0 bg-brand-orange/5 blur-[120px] rounded-full animate-pulse" />
 
       <motion.div
         animate={{ rotate: 360 }}
@@ -57,7 +58,7 @@ export const EcosystemTriangle = () => {
             <motion.div
               animate={{ rotate: -360 }}
               transition={SPIN}
-              className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-black border border-[#ff4d00]/60 flex items-center justify-center text-[8px] md:text-[10px] font-black tracking-wide text-[#ff4d00]"
+              className="w-[58px] h-[58px] sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-full bg-black border border-[#ff4d00]/60 flex items-center justify-center text-[7px] sm:text-[10px] lg:text-[11px] font-black tracking-wide text-[#ff4d00]"
             >
               {n.label}
             </motion.div>
@@ -71,11 +72,11 @@ export const EcosystemTriangle = () => {
           <motion.div
             animate={{ scale: [1, 1.06, 1] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute -translate-x-1/2 -translate-y-1/2 w-20 h-20 md:w-24 md:h-24 bg-[#ff4d00] rounded-full flex items-center justify-center text-black font-black text-3xl md:text-4xl shadow-[0_0_70px_rgba(255,77,0,0.6)]"
+            className="absolute -translate-x-1/2 -translate-y-1/2 w-[76px] h-[76px] sm:w-28 sm:h-28 lg:w-32 lg:h-32 bg-[#ff4d00] rounded-full flex items-center justify-center text-black font-black text-3xl sm:text-4xl lg:text-5xl shadow-[0_0_70px_rgba(255,77,0,0.6)]"
           >
             X
           </motion.div>
-          <span className="absolute left-1/2 -translate-x-1/2 top-12 md:top-14 mt-4 whitespace-nowrap text-[9px] md:text-[10px] font-mono uppercase tracking-[0.4em] text-zinc-500">
+          <span className="absolute left-1/2 -translate-x-1/2 top-[50px] sm:top-[68px] lg:top-[78px] whitespace-nowrap text-[8px] sm:text-[10px] font-mono uppercase tracking-[0.4em] text-zinc-500">
             Your Company
           </span>
         </motion.div>
