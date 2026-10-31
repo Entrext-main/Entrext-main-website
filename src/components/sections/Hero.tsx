@@ -83,17 +83,19 @@ export const Hero = () => {
         </motion.div>
       </div>
 
+      {/* Phones/tablets stack graphic then copy; laptops put the copy on the left and the graphic on the right. */}
+      <div className="w-full max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-16 items-center">
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className="w-full flex justify-center mt-12 md:mt-16"
+        className="w-full flex justify-center mt-12 md:mt-10 lg:mt-0 lg:justify-end lg:order-2"
       >
         <EcosystemTriangle />
       </motion.div>
 
-      <div className="w-full max-w-3xl mx-auto mt-14 md:mt-24 text-zinc-500">
+      <div className="w-full max-w-3xl mx-auto lg:mx-0 mt-14 md:mt-24 lg:mt-0 text-zinc-500 lg:order-1">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -125,6 +127,7 @@ export const Hero = () => {
             Apply as a Builder
           </Link>
         </motion.div>
+      </div>
       </div>
     </section>
   );

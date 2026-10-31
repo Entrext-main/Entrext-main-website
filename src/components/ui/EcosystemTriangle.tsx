@@ -16,7 +16,7 @@ const SPIN = { duration: 40, repeat: Infinity, ease: "linear" as const };
 
 export const EcosystemTriangle = () => {
   return (
-    <div className="relative w-full aspect-square max-w-90 sm:max-w-125 lg:max-w-160 flex items-center justify-center">
+    <div className="relative w-full aspect-square max-w-90 sm:max-w-125 lg:max-w-190 flex items-center justify-center">
       <div className="absolute inset-0 bg-brand-orange/5 blur-[120px] rounded-full animate-pulse" />
 
       <motion.div
