@@ -8,7 +8,7 @@ import { SitelinksList, SitelinkItem } from "@/src/components/ui/SitelinksList";
 export const metadata: Metadata = {
   title: "Apply",
   description:
-    "Six tracks, one studio. Primary Partner, Secondary Partner, Mentor/Advisor, Match by Entrext, Venture Studio as a Service, and Partnerships.",
+    "Eight tracks, one studio. Operator (Primary Partner), Builder (Secondary Partner), Labs Primary and Secondary Partner, Mentor/Advisor, Match by Entrext, Venture Studio as a Service, and Partnerships.",
   alternates: { canonical: "/apply" },
   openGraph: { url: "/apply", title: "Apply · Entrext" },
 };
@@ -34,6 +34,40 @@ type Phase = {
 };
 
 const PHASES: Phase[] = [
+  {
+    id: "partners",
+    eyebrow: "Start here",
+    title: "Operator & Builder",
+    subtitle: "Pair up. Build the company. Own it.",
+    tracks: [
+      {
+        id: "partners-primary",
+        label: "Primary Partner — Operator (Non-Tech)",
+        tagline: "Lead the opportunity. Build the business. Own it.",
+        bullets: [
+          "35% Equity",
+          "Identify a problem and lead the business.",
+          "Find customers, drive sales, and validate demand.",
+          "Work with the Builder to turn the idea into a company.",
+        ],
+        ctaLabel: "Apply as Primary Partner",
+        applyHref: "https://tally.so/r/7R01Vz",
+      },
+      {
+        id: "partners-secondary",
+        label: "Secondary Partner — Builder (Tech)",
+        tagline: "Build the product. Bring the idea to life. Own it.",
+        bullets: [
+          "30% Equity",
+          "Build and manage the technology.",
+          "Develop the product and its features.",
+          "Work with the Operator to turn the idea into a company.",
+        ],
+        ctaLabel: "Apply as Secondary Partner",
+        applyHref: "https://tally.so/r/449675",
+      },
+    ],
+  },
   {
     id: "labs",
     eyebrow: "Phase 01",
@@ -174,7 +208,7 @@ export default function ApplyPage() {
           <span className="opacity-20 text-brand-orange italic">Partner up.</span>
         </h1>
         <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-16 md:mb-24 leading-relaxed">
-          Six tracks. One studio. Choose the role that matches what you want to build.
+          Eight tracks. One studio. Choose the role that matches what you want to build.
         </p>
 
         <SitelinksList items={items} eyebrow="Application Tracks" />

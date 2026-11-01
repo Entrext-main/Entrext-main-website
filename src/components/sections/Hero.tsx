@@ -103,7 +103,7 @@ export const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-xl md:text-3xl font-bold text-white mb-6 uppercase tracking-tight leading-tight">
-            The venture studio where industry operators and tech builders pair up, validate products, and co-own the companies they build.
+            The company-building platform where industry operators and tech builders pair up, validate opportunities, and co-own the companies they build.
           </h2>
           <p className="text-sm md:text-lg leading-relaxed uppercase tracking-tight font-bold opacity-80 mb-6 md:mb-8">
             Nobody gets hired here. Operators who know the problem and builders who can solve it launch, validate, and scale niche digital products together.
